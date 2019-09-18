@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Andrey Kirson](https://up.htmlacademy.ru/htmlcss/26/user/1136945).
-* Наставник: `Михаил Поданев`.
+* Наставник: [Михаил Поданев] (https://github.com/andreykirson/1136945-device-26.git)
 
 ---
 
