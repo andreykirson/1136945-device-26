@@ -7,20 +7,20 @@
 
   <body>
       <header>
-          <nav>
+          <nav aria-label="Навигация по меню">
               <a href="./index.html">
                 <img src="./img/logo.svg" alt="Логотип магазина Device">
               </a>
-              <img src="./img/search.svg" alt=""><input type="search" name="Search" id="Search" placeholder="Поиск по сайту">
+              <img src="./img/search.svg" alt=""><input type="search" name="Search" placeholder="Поиск по сайту">
               <a href=""><img src="./img/user.svg" alt="Войти">Войти</a>
-              <a href=""> <img src="./img/compare.svg" alt="Сравнить"> Сравнить</a>
-              <a href=""> <img src="./img/cart.svg" alt="Корзина"> Корзина</a>
+              <a href=""> <img src="./img/compare.svg" alt="Сравнить">Сравнить</a>
+              <a href=""> <img src="./img/cart.svg" alt="Корзина">Корзина</a>
 
               <ul>
-                 <li><a href="">КАТАЛОГ ТОВАРОВ</a> <img src="./img/plus.png" alt="Раскрыть"> </li>
-                 <li><a href="">ДОСТАВКА</a> </li>
-                 <li><a href="">ГАРАНТИЯ</a> </li>
-                 <li><a href="">КОНТАКТЫ</a> </li>
+                <li><a href="">КАТАЛОГ ТОВАРОВ</a> <a href="" aria-label="Раскрыть каталог"><img src="./img/plus.png" alt="Раскрыть"></a></li>
+                <li><a href="">ДОСТАВКА</a></li>
+                <li><a href="">ГАРАНТИЯ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
               </ul>
               
             </nav>
@@ -41,6 +41,7 @@
   <!-- Форма для фильтра -->
 <form action="" method="post">
 <fieldset>
+  <legend class="visually hidden">Меню фильтра</legend>
   <!-- <img src="./img/side_bar_form.png" alt=""> -->
   <h3>Стоимость</h3> <!-- make hidden-->
   <img src="./img/form_black_line.png" alt="">
@@ -51,8 +52,8 @@
   <ul>
     <h3>Цвет</h3> 
     <li>
-        <input type="checkbox" value="Черный" name="balck" checked>
-        <label for="balck">Черный</label>
+      <input type="checkbox" value="Черный" name="balck" checked>
+      <label for="balck">Черный</label>
     </li>
     <li>
       <input type="checkbox" value="Белый" name="balck">
@@ -72,13 +73,11 @@
   </ul>
   
   <img src="./img/form_black_line.png" alt="">
+  <p>Bluetooth</p>
+  <input type="radio" name="bluetooth_availability" aria-label="Имеется bluetooth" value="yes">
+  <label for="bluetooth_availability" >Есть</label>
 
-  <h3>Наличие bluetooth</h3><!-- make hidden-->
-
-  <input type="radio" name="bluetooth_availability" value="yes">
-  <label for="bluetooth_availability">Есть</label>
-
-  <input type="radio" name="bluetooth_availability" value="no">
+  <input type="radio" name="bluetooth_availability" aria-label="Отсутствует bluetooth" value="no">
   <label for="bluetooth_availability">Нет</label> 
 
  <button type="button"> <!-- <img src="./img/yellow_line.png" alt=""> --> ПОКАЗАТЬ</button>  
@@ -98,16 +97,14 @@
     <p>По типу</p>
     <p>По популярности</p>
     
-    <button type="button">
-      Отфильтровать по возрастанию <!-- make hidden-->
+    <button type="button" aria-label="Отфильтровать по возрастанию">
+       <!-- make hidden-->
       <img src="./img/icon-up-dir.svg" alt="Отфильтровать по возрастанию">
     </button>
-    <button type="button">
-      Отфильтровать по убыванию <!-- make hidden-->
+    <button type="button" aria-label="Отфильтровать по убыванию">
+       <!-- make hidden-->
       <img src="./img/icon-down-dir.svg" alt="Отфильтровать по убыванию">
     </button>
-    
-
     <!--Меню для фильтрации-->
 
   </section>
@@ -142,54 +139,52 @@
 
   </section>
   <div>
-    <a href="">НАЗАД</a>
-    <a href="">1</a>
-    <a href="">2</a>
-    <a href="">3</a>
-    <a href="">ВПЕРЕД</a>
+    <a href="" aria-label="Перейти на предыдущую страницу">НАЗАД</a>
+    <a href="" aria-label="Перейти первую страницу">1</a>
+    <a href="" aria-label="Перейти вторую страницу">2</a>
+    <a href="" aria-label="Перейти третюю страницу">3</a>
+    <a href="" aria-label="Перейти на следущую страницу">ВПЕРЕД</a>
     <img src="./img/foot_navigation.png" alt="">
   </div>
 </main>
 
 <footer>
-<!-- <img src="./img/footer.png" alt=""> -->
-<div>
-  <a href="index.html">
-  <img src="./img/logo_yellow.svg" alt="Логотип магазина Device">
-  </a>
-    <a href="">
-      <img src="./img/user_yellow.svg" alt="Войти">
-      Войти
-    </a>
-    <a href="">
-      <img src="./img/compare_yellow.svg" alt="">
-      Сравнить</a>
-    <a href="">
-        <img src="./img/cart_yellow.svg" alt="">
-      Корзина
-    </a>
-</div>
+    <!-- <img src="./img/footer.png" alt=""> -->
+    <div>
+      <a href="">
+      <img src="./img/logo_yellow.svg" alt="Логотип магазина Device">
+      </a>
+        <a href="">
+          <img src="./img/user_yellow.svg" alt="Войти">
+          Войти
+        </a>
+        <a href="">
+          <img src="./img/compare_yellow.svg" alt="">
+          Сравнить</a>
+        <a href="">
+            <img src="./img/cart_yellow.svg" alt="">
+          Корзина
+        </a>
+    </div>
 
-<div>
- <p>г.Москва ул.Строителей, 15</p>
-  <!-- <img src="./img/small_yellow_line.png" alt=""> -->
+   <div>
+     <p>г.Москва ул.Строителей, 15</p>
+      <ul>
+        <li><a href="">ДОСТАВКА</a> </li>
+        <li><a href="">ГАРАНТИЯ</a> </li>
+        <li><a href="">КОНТАКТЫ</a> </li>
+      </ul>
+      <p>Тел: +7(495) 495-95-95</p>
+    </div>
 
-  <ul>
-    <li><a href="">ДОСТАВКА</a> </li>
-    <li><a href="">ГАРАНТИЯ</a> </li>
-    <li><a href="">КОНТАКТЫ</a> </li>
-  </ul>
-  <p>Тел: +7(495) 495-95-95</p>
-</div>
-
-<div>
-  <ul>
-    <li><a href=""><img src="./img/fb.svg" alt="Facebook"></a></li>
-    <li><a href=""><img src="./img/instagram.svg" alt="Instagram"></a></li>
-    <li><a href=""><img src="./img/twiter.svg" alt="TWITER"></a></li>
-  </ul>
-  <img src="./img/logo-html_yellow.svg" alt="логотип html Academy">
-</div>
+    <div>
+      <ul>
+        <li><a href=""><img src="./img/fb.svg" alt="Facebook" aria-label="Device в Фейсбуке"></a></li>
+        <li><a href=""><img src="./img/instagram.svg" alt="Instagram" aria-label="Device в Инстаграмме"></a></li>
+        <li><a href=""><img src="./img/twiter.svg" alt="TWITER" aria-label="Device в Твиттере"></a></li>
+      </ul>
+      <img src="./img/logo-html_yellow.svg" alt="логотип html Academy">
+    </div>
 
 </footer>
 
@@ -210,8 +205,8 @@
 
 <section>
     <!-- <img src="./img/add_to_cart_line.png" alt=""> -->
-    <p>Любительская селфи-палка  </p>
-    <p>В КОРЗИНУ</p>
+    <p>Любительская селфи-палка</p>
+    <button type="button" aria-label="добавить в корзину">В КОРЗИНУ</button>
     <p>Добавить к сравнению</p> 
 </section>
 
