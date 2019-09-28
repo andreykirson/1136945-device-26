@@ -36,12 +36,78 @@
   </ul>
 
   <section>
-    <h2>Фильтр</h2>
+    <h2>Меню для выбора товара</h2>
+    <h3>ФИЛЬТР:</h3>
   <!-- Форма для фильтра -->
+<form action="" method="post">
+<fieldset>
+  <!-- <img src="./img/side_bar_form.png" alt=""> -->
+  <h3>Стоимость</h3> <!-- make hidden-->
+  <img src="./img/form_black_line.png" alt="">
+  <label for="price">Стоимость</label>
+  <input type="range" min="0" max="" name="price">
+
+  <img src="./img/form_black_line.png" alt="">
+  <ul>
+    <h3>Цвет</h3> 
+    <li>
+        <input type="checkbox" value="Черный" name="balck" checked>
+        <label for="balck">Черный</label>
+    </li>
+    <li>
+      <input type="checkbox" value="Белый" name="balck">
+      <label for="balck">Белый</label>
+    </li>
+    <li>
+      <input type="checkbox" value="Синий" name="blue" checked>
+      <label for="balck">Синий</label>
+    </li>
+    <li>
+      <input type="checkbox" value="Красный" name="red" checked>
+      <label for="balck">Красный</label>
+    </li>
+    <li>
+      <input type="checkbox" value="Розовый" name="pink">
+      <label for="balck">Розовый</label></li>
+  </ul>
+  
+  <img src="./img/form_black_line.png" alt="">
+
+  <h3>Наличие bluetooth</h3><!-- make hidden-->
+
+  <input type="radio" name="bluetooth_availability" value="yes">
+  <label for="bluetooth_availability">Есть</label>
+
+  <input type="radio" name="bluetooth_availability" value="no">
+  <label for="bluetooth_availability">Нет</label> 
+
+ <button type="button"> <!-- <img src="./img/yellow_line.png" alt=""> --> ПОКАЗАТЬ</button>  
+
+</fieldset>
+
+</form>
+
+
   </section>
 
   <section>
-    <h2>Меню для фильтрации</h2>
+     
+    <h3>СОРТИРОВКА:</h3>
+    <!-- <img src="form_top_background.png" alt="">  -->
+    <p>По цене </p>
+    <p>По типу</p>
+    <p>По популярности</p>
+    
+    <button type="button">
+      Отфильтровать по возрастанию <!-- make hidden-->
+      <img src="./img/icon-up-dir.svg" alt="Отфильтровать по возрастанию">
+    </button>
+    <button type="button">
+      Отфильтровать по убыванию <!-- make hidden-->
+      <img src="./img/icon-down-dir.svg" alt="Отфильтровать по убыванию">
+    </button>
+    
+
     <!--Меню для фильтрации-->
 
   </section>
@@ -52,24 +118,24 @@
     <article>
       <ul>
         <li>
-          <img src="./img/item-1.jpg.jpg" alt="Любительская селфи-палка">
-          <p>Любительская селфи-палка  </p>
+          <img src="./img/item-1.jpg" alt="Любительская селфи-палка">
           <span>500 руб</span>
         </li>
         <li>
-          <img src="./img/item-2.jpg.jpg" alt="Профессиональная селфи-палка">
+          <img src="./img/item-2.jpg" alt="Профессиональная селфи-палка">
           <p>Профессиональная</p> <p>селфи-палка </p>
           <span>1500 руб</span>
         </li>
         <li>
-          <img src="./img/item-3.jpg.jpg" alt="Непотопляемая селфи-палка">
+          <img src="./img/item-3.jpg" alt="Непотопляемая селфи-палка">
           <p>Непотопляемая селфи-палка </p>
           <span>2500 руб</span>
         </li>
         <li>
-            <img src="./img/item-4.jpg.jpg" alt="Селфи-палка Селфи-палка «Следуй за мной» ">
-            <p>Селфи-палка Селфи-палка «Следуй за мной» </p>
-            <span>4900 руб</span>
+          <img src="./img/item-4.jpg" alt="Селфи-палка Селфи-палка «Следуй за мной» ">
+          <img src="./img/new_item.png" alt="Новинка">
+          <p>Селфи-палка Селфи-палка «Следуй за мной» </p>
+          <span>4900 руб</span>
         </li>
       </ul>
     </article>
@@ -81,53 +147,73 @@
     <a href="">2</a>
     <a href="">3</a>
     <a href="">ВПЕРЕД</a>
+    <img src="./img/foot_navigation.png" alt="">
   </div>
 </main>
 
 <footer>
-    <div>
-      <a href="">
-      <img src="./img/logo_yellow.svg" alt="Логотип магазина Device">
-      </a>
-        <a href="">
-          <img src="./img/user_yellow.svg" alt="Войти">
-          Войти
-        </a>
-        <a href="">
-          <img src="./img/compare_yellow.svg" alt="">
-          Сравнить</a>
-        <a href="">
-            <img src="./img/cart_yellow.svg" alt="">
-          Корзина
-        </a>
-    </div>
+<!-- <img src="./img/footer.png" alt=""> -->
+<div>
+  <a href="index.html">
+  <img src="./img/logo_yellow.svg" alt="Логотип магазина Device">
+  </a>
+    <a href="">
+      <img src="./img/user_yellow.svg" alt="Войти">
+      Войти
+    </a>
+    <a href="">
+      <img src="./img/compare_yellow.svg" alt="">
+      Сравнить</a>
+    <a href="">
+        <img src="./img/cart_yellow.svg" alt="">
+      Корзина
+    </a>
+</div>
 
-   <div>
-     <p>г.Москва ул.Строителей, 15</p>
-      <ul>
-        <li><a href="">ДОСТАВКА</a> </li>
-        <li><a href="">ГАРАНТИЯ</a> </li>
-        <li><a href="">КОНТАКТЫ</a> </li>
-      </ul>
-      <p>Тел: +7(495) 495-95-95</p>
-    </div>
+<div>
+ <p>г.Москва ул.Строителей, 15</p>
+  <!-- <img src="./img/small_yellow_line.png" alt=""> -->
 
-    <div>
-      <ul>
-        <li><a href=""><img src="./img/fb.svg" alt="Facebook"></a></li>
-        <li><a href=""><img src="./img/instagram.svg" alt="Instagram"></a></li>
-        <li><a href=""><img src="./img/twiter.svg" alt="TWITER"></a></li>
-      </ul>
-      <img src="./img/logo-html_yellow.svg" alt="логотип html Academy">
-    </div>
+  <ul>
+    <li><a href="">ДОСТАВКА</a> </li>
+    <li><a href="">ГАРАНТИЯ</a> </li>
+    <li><a href="">КОНТАКТЫ</a> </li>
+  </ul>
+  <p>Тел: +7(495) 495-95-95</p>
+</div>
+
+<div>
+  <ul>
+    <li><a href=""><img src="./img/fb.svg" alt="Facebook"></a></li>
+    <li><a href=""><img src="./img/instagram.svg" alt="Instagram"></a></li>
+    <li><a href=""><img src="./img/twiter.svg" alt="TWITER"></a></li>
+  </ul>
+  <img src="./img/logo-html_yellow.svg" alt="логотип html Academy">
+</div>
 
 </footer>
 
 
   </body>
 
+<section> <!-- dropped catalog menu  -->
+  <ul>
+    <li> Виртуальная реальность</li>
+    <li>Монопоы для селфи</li>
+    <li>Экшн-камеры</li>
+    <li>Фитнес-браслеты</li>
+    <li>Умные часы</li>
+    <li>Квадокоптеры</li>
+  </ul>
+  <!-- <img src="./img/dropped_catalog_menu.png" alt=""> -->
+</section>
 
-
+<section>
+    <!-- <img src="./img/add_to_cart_line.png" alt=""> -->
+    <p>Любительская селфи-палка  </p>
+    <p>В КОРЗИНУ</p>
+    <p>Добавить к сравнению</p> 
+</section>
 
 
 </html>
