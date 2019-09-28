@@ -6,9 +6,9 @@
   </head>
   <body>
 <header>
-  <nav>
-    <a >
-      <img src="./img/logo.svg" alt="Логотип магазина Device">
+  <nav aria-label="Навигация по меню">
+    <a>
+    <img src="./img/logo.svg" alt="Логотип магазина Device">
     </a>
     <img src="./img/search.svg" alt=""><input type="search" name="Search" id="Search" placeholder="Поиск по сайту">
     <a href=""><img src="./img/user.svg" alt="Войти">Войти</a>
@@ -31,12 +31,12 @@
 <section>
   <h2>Категории товаров</h2>
   <ul>
-    <li> <article><a href="http://via.placeholder.com/150x150"><img src="./img/popular-1.svg" alt="Виртуальная реальность"></a></article> Виртуальная реальность</li>
-    <li><article><a href="http://via.placeholder.com/150x150"><img src="./img/popular-2.svg" alt="Монопоы для селфи"></a></article>Монопоы для селфи</li>
-    <li><article><a href="http://via.placeholder.com/150x150"><img src="./img/popular-3.svg" alt="Экшн-камеры"></a></article>Экшн-камеры</li>
-    <li><article><a href="http://via.placeholder.com/150x150"><img src="./img/popular-4.svg" alt="Фитнес-браслеты"></a></article>Фитнес-браслеты</li>
-    <li><article><a href="http://via.placeholder.com/150x150"><img src="./img/popular-5.svg" alt="Умные часы"></a></article>Умные часы</li>
-    <li><article><a href="http://via.placeholder.com/150x150"><img src="./img/popular-6.svg" alt="Квадокоптеры"></a></article>Квадокоптеры</li>
+    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-1.svg" alt="Виртуальная реальность">Виртуальная реальность</a></li>
+    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-2.svg" alt="Монопоы для селфи">Монопоы для селфи</a></li>
+    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-3.svg" alt="Экшн-камеры">Экшн-камеры</a></li>
+    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-4.svg" alt="Фитнес-браслеты">Фитнес-браслеты</a></li>
+    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-5.svg" alt="Умные часы">Умные часы</a></li>
+    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-6.svg" alt="Квадокоптеры">Квадокоптеры</a></li>
   </ul>
 
 </section>
@@ -64,10 +64,12 @@
 
 <section>
   <h2>Бренды</h2>
-  <article><img src="./img/logo-1.png" alt="dji"></article>
-  <article><img src="./img/logo-2.png" alt="SP Gadgets"></article>
-  <article><img src="./img/logo-3.png" alt="GoPro"></article>
-  <article><img src="./img/logo-4.png" alt="VIVE"></article>
+  <ul>
+    <li><img src="./img/logo-1.png" alt="dji" aria-label="Бренд DJI"></li>
+    <li><img src="./img/logo-2.png" alt="SP Gadgets" aria-label="Бренд SP Gadgets"></li>
+    <li><img src="./img/logo-3.png" alt="GoPro" aria-label="Бренд GoPro"></li>
+    <li><img src="./img/logo-4.png" alt="VIVE" aria-label="Бренд VIVE"></li>
+  </ul>
 </section>
 
 <section>
@@ -98,7 +100,7 @@
   </h2>
   <p>Вы можете забрать товар сами, заехав в наш офис.
     Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  <a href=""><img src="./img/map.png" alt="Карта месторасположения магазина"></a>
+  <a href=""><img src="./img/map.png" aria-label="Карта месторасположения магазина" alt="Карта месторасположения магазина"></a>
   <a href="">Напишите нам</a>
 </section>
 
@@ -135,9 +137,9 @@
 
     <div>
       <ul>
-        <li><a href=""><img src="./img/fb.svg" alt="Facebook"></a></li>
-        <li><a href=""><img src="./img/instagram.svg" alt="Instagram"></a></li>
-        <li><a href=""><img src="./img/twiter.svg" alt="TWITER"></a></li>
+        <li><a href=""><img src="./img/fb.svg" alt="Facebook" aria-label="Device в Фейсбуке"></a></li>
+        <li><a href=""><img src="./img/instagram.svg" alt="Instagram" aria-label="Device в Инстаграмме"></a></li>
+        <li><a href=""><img src="./img/twiter.svg" alt="TWITER" aria-label="Device в Твиттере"></a></li>
       </ul>
       <img src="./img/logo-html_yellow.svg" alt="логотип html Academy">
     </div>
@@ -196,6 +198,29 @@
   
   </section>
 
+  <section>
+      <!-- <img src="./img/add_to_cart_line.png" alt=""> -->
+      <p>Любительская селфи-палка  </p>
+      <p>В КОРЗИНУ</p>
+      <p>Добавить к сравнению</p> 
+  </section>
 
+
+<form action="" method="post">
+
+<fieldset>
+  <legend class="visually hidden">Отправить письмо</legend>
+  
+<label for="name">Ваше имя:</label>
+<input type="text" name="name" placeholder="Имя Фамилия">
+<label for="email">Ваш e-mail:</label> 
+<input type="email" name="email" placeholder="email@example.com">
+<p> <label for="text">Текст письма:</label> </p>
+<p><textarea rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea></p>
+
+<button type="button" aria-label="Закрыть"><img src="./img/modal-close.svg" alt="Закрыть"> </button>
+
+</fieldset>
+</form>
 
 </html>
