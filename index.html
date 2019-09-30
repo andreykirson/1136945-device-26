@@ -3,25 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
 <header>
-  <nav aria-label="Навигация по меню">
+  <nav aria-label="Навигация по меню" class="main-navigation">
     <a>
-    <img src="./img/logo.svg" alt="Логотип магазина Device">
+    <img src="./img/logo.svg" width="126" height="35" alt="Логотип магазина Device">
     </a>
-    <img src="./img/search.svg" alt=""><input type="search" name="Search" id="Search" placeholder="Поиск по сайту">
-    <a href=""><img src="./img/user.svg" alt="Войти">Войти</a>
-    <a href=""> <img src="./img/compare.svg" alt="Сравнить"> Сравнить</a>
-    <a href=""> <img src="./img/cart.svg" alt="Корзина"> Корзина</a>
+    <label for="search" class="visually_hidden">Поиск по сайту, введите текст для поиска</label>
+    <input type="search" class="search_field" name="search" id="search" placeholder="Поиск по сайту">
+    <label for="search_btn" class="visually_hidden">Начать поиск</label>
+    <button type="button" id="search_btn" name="search_btn">Найти</button>
+
 
       <ul>
-       <li><a href="">КАТАЛОГ ТОВАРОВ</a> <img src="./img/plus.png" alt="Раскрыть"> </li>
+       <li><a href="">КАТАЛОГ ТОВАРОВ</a></li>
        <li><a href="">ДОСТАВКА</a> </li>
        <li><a href="">ГАРАНТИЯ</a> </li>
        <li><a href="">КОНТАКТЫ</a> </li>
       </ul>
-      <!-- <img src="./img/header_yellow.png" alt=""> -->
+
   </nav>
 </header>
 
@@ -31,12 +34,12 @@
 <section>
   <h2>Категории товаров</h2>
   <ul>
-    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-1.svg" alt="Виртуальная реальность">Виртуальная реальность</a></li>
-    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-2.svg" alt="Монопоы для селфи">Монопоы для селфи</a></li>
-    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-3.svg" alt="Экшн-камеры">Экшн-камеры</a></li>
-    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-4.svg" alt="Фитнес-браслеты">Фитнес-браслеты</a></li>
-    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-5.svg" alt="Умные часы">Умные часы</a></li>
-    <li><a href="http://via.placeholder.com/150x150"><img src="./img/popular-6.svg" alt="Квадокоптеры">Квадокоптеры</a></li>
+    <li><a href="http://via.placeholder.com/150x150">Виртуальная реальность</a></li>
+    <li><a href="http://via.placeholder.com/150x150">Монопоы для селфи</a></li>
+    <li><a href="http://via.placeholder.com/150x150">Экшн-камеры</a></li>
+    <li><a href="http://via.placeholder.com/150x150">Фитнес-браслеты</a></li>
+    <li><a href="http://via.placeholder.com/150x150">Умные часы</a></li>
+    <li><a href="http://via.placeholder.com/150x150">Квадокоптеры</a></li>
   </ul>
 
 </section>
@@ -57,7 +60,7 @@
       Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
       Ведь мы неплохо заработаем, поднимая его на ваш этаж.
       </p>
-      <img src="https://via.placeholder.com/150x100" alt="Курьер несущий посылку">
+     
     </section>
   </section>
 </section>
@@ -74,7 +77,7 @@
 
 <section>
   <h2>
-    <!-- <img src="./img/black_line.png" alt="черная полоска"> -->
+
     О нас
   </h2>
     <p>
@@ -95,31 +98,31 @@
 
 <section>
   <h2>
-      <!-- <img src="./img/black_line.png" alt="черная полоска"> -->
+      
     КОНТАКТЫ
   </h2>
   <p>Вы можете забрать товар сами, заехав в наш офис.
     Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  <a href=""><img src="./img/map.png" aria-label="Карта месторасположения магазина" alt="Карта месторасположения магазина"></a>
+  <a href=""></a>
   <a href="">Напишите нам</a>
 </section>
 
 </main>
 <footer>
-    <!-- <img src="./img/footer.png" alt=""> -->
+
     <div>
       <a href="">
-      <img src="./img/logo_yellow.svg" alt="Логотип магазина Device">
+      <img src="./img/logo_yellow.svg" width="126" height="35" alt="Логотип магазина Device"> 
       </a>
         <a href="">
-          <img src="./img/user_yellow.svg" alt="Войти">
+          
           Войти
         </a>
         <a href="">
-          <img src="./img/compare_yellow.svg" alt="">
+          
           Сравнить</a>
         <a href="">
-            <img src="./img/cart_yellow.svg" alt="">
+            
           Корзина
         </a>
     </div>
@@ -144,8 +147,6 @@
     </div>
 
 </footer>
-
-</body>
 
 <section>
   <h2>Селфи палка</h2>
@@ -195,31 +196,34 @@
         <li>Радиус поражения 50 м</li>
       </ul>
   
-  </section>
+</section>
 
-  <section>
-      <!-- <img src="./img/add_to_cart_line.png" alt=""> -->
+<section>
+
       <p>Любительская селфи-палка  </p>
       <p>В КОРЗИНУ</p>
       <p>Добавить к сравнению</p> 
-  </section>
+</section>
 
 
-<form action="" method="post">
+<form action="https://echo.htmlacademy.ru" method="post">
 
 <fieldset>
   <legend class="visually hidden">Отправить письмо</legend>
   
 <label for="name">Ваше имя:</label>
-<input type="text" name="name" placeholder="Имя Фамилия">
+<input type="text" name="name" id="name" placeholder="Имя Фамилия">
 <label for="email">Ваш e-mail:</label> 
-<input type="email" name="email" placeholder="email@example.com">
+<input type="email" name="email" id="email" placeholder="email@example.com">
 <p> <label for="text">Текст письма:</label> </p>
-<p><textarea rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea></p>
-
-<button type="button" aria-label="Закрыть"><img src="./img/modal-close.svg" alt="Закрыть"> </button>
+<p><textarea rows="10" cols="45" id="text" name="text" placeholder="В свободной форме"></textarea></p>
+<button type="button" aria-label="Закрыть"></button>
 
 </fieldset>
 </form>
+
+</body>
+
+
 
 </html>

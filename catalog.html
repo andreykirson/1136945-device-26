@@ -9,15 +9,15 @@
       <header>
           <nav aria-label="Навигация по меню">
               <a href="./index.html">
-                <img src="./img/logo.svg" alt="Логотип магазина Device">
+                <img src="./img/logo.svg" width="126" height="35" alt="Логотип магазина Device">
               </a>
-              <img src="./img/search.svg" alt=""><input type="search" name="Search" placeholder="Поиск по сайту">
-              <a href=""><img src="./img/user.svg" alt="Войти">Войти</a>
-              <a href=""> <img src="./img/compare.svg" alt="Сравнить">Сравнить</a>
-              <a href=""> <img src="./img/cart.svg" alt="Корзина">Корзина</a>
+              <label for="search" class="visually_hidden">Поиск по сайту, введите текст для поиска</label>
+              <input type="search" class="search_field" name="search" id="search" placeholder="Поиск по сайту">
+              <label for="search_btn" class="visually_hidden">Начать поиск</label>
+              <button type="button" id="search_btn" name="search_btn">Найти</button>
 
               <ul>
-                <li><a href="">КАТАЛОГ ТОВАРОВ</a> <a href="" aria-label="Раскрыть каталог"><img src="./img/plus.png" alt="Раскрыть"></a></li>
+                <li><a href="">КАТАЛОГ ТОВАРОВ</a> <a href="" aria-label="Раскрыть каталог"></a></li>
                 <li><a href="">ДОСТАВКА</a></li>
                 <li><a href="">ГАРАНТИЯ</a></li>
                 <li><a href="">КОНТАКТЫ</a></li>
@@ -39,48 +39,44 @@
     <h2>Меню для выбора товара</h2>
     <h3>ФИЛЬТР:</h3>
   <!-- Форма для фильтра -->
-<form action="" method="post">
+<form action="https://echo.htmlacademy.ru" method="post">
 <fieldset>
   <legend class="visually hidden">Меню фильтра</legend>
-  <!-- <img src="./img/side_bar_form.png" alt=""> -->
-  <h3>Стоимость</h3> <!-- make hidden-->
-  <img src="./img/form_black_line.png" alt="">
-  <label for="price">Стоимость</label>
-  <input type="range" min="0" max="" name="price">
 
-  <img src="./img/form_black_line.png" alt="">
-  <ul>
-    <h3>Цвет</h3> 
+  <h3>Стоимость</h3> <!-- make hidden-->
+  <label for="price">Стоимость</label>
+  <input type="range" min="0" max="0" name="price" id="price">
+  <h3>Цвет</h3>
+  <ul>  
     <li>
-      <input type="checkbox" value="Черный" name="balck" checked>
-      <label for="balck">Черный</label>
+      <input type="checkbox" value="Черный" name="black" id="black" checked>
+      <label for="black">Черный</label>
     </li>
     <li>
-      <input type="checkbox" value="Белый" name="balck">
-      <label for="balck">Белый</label>
+      <input type="checkbox" value="Белый" name="white" id="white">
+      <label for="white">Белый</label>
     </li>
     <li>
-      <input type="checkbox" value="Синий" name="blue" checked>
-      <label for="balck">Синий</label>
+      <input type="checkbox" value="Синий" name="blue" id="blue" checked>
+      <label for="blue">Синий</label>
     </li>
     <li>
-      <input type="checkbox" value="Красный" name="red" checked>
-      <label for="balck">Красный</label>
+      <input type="checkbox" value="Красный" name="red" id="red" checked>
+      <label for="red">Красный</label>
     </li>
     <li>
-      <input type="checkbox" value="Розовый" name="pink">
-      <label for="balck">Розовый</label></li>
+      <input type="checkbox" value="Розовый" name="pink" id="pink">
+      <label for="pink">Розовый</label></li>
   </ul>
   
-  <img src="./img/form_black_line.png" alt="">
   <p>Bluetooth</p>
-  <input type="radio" name="bluetooth_availability" aria-label="Имеется bluetooth" value="yes">
-  <label for="bluetooth_availability" >Есть</label>
+  <input type="radio" name="bluetooth_availability" aria-label="Имеется bluetooth" value="yes" id="bluetooth_availability_yes">
+  <label for="bluetooth_availability_yes" >Есть</label>
 
-  <input type="radio" name="bluetooth_availability" aria-label="Отсутствует bluetooth" value="no">
-  <label for="bluetooth_availability">Нет</label> 
+  <input type="radio" name="bluetooth_availability" aria-label="Отсутствует bluetooth" value="no" id="bluetooth_availability_no">
+  <label for="bluetooth_availability_no">Нет</label> 
 
- <button type="button"> <!-- <img src="./img/yellow_line.png" alt=""> --> ПОКАЗАТЬ</button>  
+ <button type="button">ПОКАЗАТЬ</button>  
 
 </fieldset>
 
@@ -92,7 +88,6 @@
   <section>
      
     <h3>СОРТИРОВКА:</h3>
-    <!-- <img src="form_top_background.png" alt="">  -->
     <p>По цене </p>
     <p>По типу</p>
     <p>По популярности</p>
@@ -110,9 +105,8 @@
   </section>
 
   <section>
-    <h2>Фото товара</h2>
-
-    <article>
+      <article>
+        <h2>Фото товара</h2>
       <ul>
         <li>
           <img src="./img/item-1.jpg" alt="Любительская селфи-палка">
@@ -144,27 +138,17 @@
     <a href="" aria-label="Перейти вторую страницу">2</a>
     <a href="" aria-label="Перейти третюю страницу">3</a>
     <a href="" aria-label="Перейти на следущую страницу">ВПЕРЕД</a>
-    <img src="./img/foot_navigation.png" alt="">
   </div>
 </main>
 
 <footer>
-    <!-- <img src="./img/footer.png" alt=""> -->
     <div>
       <a href="">
-      <img src="./img/logo_yellow.svg" alt="Логотип магазина Device">
+      <img src="./img/logo_yellow.svg" width="126" height="35" alt="Логотип магазина Device"> 
       </a>
-        <a href="">
-          <img src="./img/user_yellow.svg" alt="Войти">
-          Войти
-        </a>
-        <a href="">
-          <img src="./img/compare_yellow.svg" alt="">
-          Сравнить</a>
-        <a href="">
-            <img src="./img/cart_yellow.svg" alt="">
-          Корзина
-        </a>
+        <a href=""> Войти</a>
+        <a href="">Сравнить</a>
+        <a href="">Корзина</a>
     </div>
 
    <div>
@@ -188,9 +172,6 @@
 
 </footer>
 
-
-  </body>
-
 <section> <!-- dropped catalog menu  -->
   <ul>
     <li> Виртуальная реальность</li>
@@ -200,15 +181,17 @@
     <li>Умные часы</li>
     <li>Квадокоптеры</li>
   </ul>
-  <!-- <img src="./img/dropped_catalog_menu.png" alt=""> -->
 </section>
 
 <section>
-    <!-- <img src="./img/add_to_cart_line.png" alt=""> -->
     <p>Любительская селфи-палка</p>
     <button type="button" aria-label="добавить в корзину">В КОРЗИНУ</button>
     <p>Добавить к сравнению</p> 
 </section>
+
+
+  </body>
+
 
 
 </html>

@@ -1,0 +1,101 @@
+/* @font-face {
+    font-family: "Roboto";  задаем произвольное имя для шрифта, которое будет использоваться в свойстве font-family при указании стилей для конкретных элементов 
+    src: url("/fonts/Roboto-Regular.ttf") format('truetype');  /* задаем путь относительно корня сайта к шрифту (url) и тип шрифта (format). Тип шрифта выступает подсказкой для браузера (в идеале ускоряет процесс обработки) 
+    font-style: normal;   указываем, что стиль шрифта обычный - это значение по умолчанию 
+    font-weight: normal;   определяет нормальное начертание символов - это значение по умолчанию 
+    } 
+    */ 
+
+.visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Grilory" Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    background-color: #f7e296;
+    background-image: url("./img/header_yellow.png");
+    font-family: "Open Sans", sans-serif; 
+    font-size: 15px;
+    color: #000000;
+}
+
+/* add rest navigation menu class */
+.main-navigation a:hover,
+.main-navigation a:focus {
+    color: #635a3c;
+}
+
+.main-navigation a:active {
+    color: #ac9e69;
+}
+
+.main-navigation input[type="text"]:hover {
+    color: #635a3c;
+}
+
+.main-navigation input[type="text"]:focus {
+    color:#000000; 
+}
+    
+.main-navigation input[type="button"]:focus {
+    background-color:#000000;
+    color: #ffffff; 
+}
+
+
+.main-navigation input[type="button"]:active {
+    background-color:#000000;
+    color: #4d4d4d; 
+}
+
+.main-navigation input[type="button"] {
+    background-color:#f7e296;
+    color: #000000;
+    border-color: #000000;
+    border: 2px; 
+}
+
+
+
+
+.category-navigation,
+.body {
+    list-style: none;
+}
+
+
+
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #663d15;
+}
+
+/* fot input 
+background-color: transparent
+border: 2px solid #000000
+border-color: #663d15 */
+
+

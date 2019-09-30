@@ -1,0 +1,131 @@
+/* @font-face {
+    font-family: "Roboto";  задаем произвольное имя для шрифта, которое будет использоваться в свойстве font-family при указании стилей для конкретных элементов 
+    src: url("/fonts/Roboto-Regular.ttf") format('truetype');  /* задаем путь относительно корня сайта к шрифту (url) и тип шрифта (format). Тип шрифта выступает подсказкой для браузера (в идеале ускоряет процесс обработки) 
+    font-style: normal;   указываем, что стиль шрифта обычный - это значение по умолчанию 
+    font-weight: normal;   определяет нормальное начертание символов - это значение по умолчанию 
+    } 
+    */ 
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Grilory" Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Gilory"; 
+    src: url("Gilory.woff2") format("woff2")
+}
+
+
+.main-navigation ul {
+    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-size: 18px; 
+}
+
+.main-navigation {
+    background-color: #f7e296;
+    background-image: url("./img/header_yellow.png");
+    font-family: "Open Sans", sans-serif; 
+    font-size: 15px;
+    color: #000000;
+}
+
+/* add rest navigation menu class */
+.main-navigation a:hover,
+.main-navigation a:focus {
+    color: #635a3c;
+}
+
+.main-navigation a:active {
+    color: #ac9e69;
+}
+
+.main-navigation input[type="search"]{
+    background-color: #f7e296;
+    border-style: none;
+}
+
+.main-navigation input[type="search"]:hover::placeholder {
+    color:#635a3c;
+    border-style: none;
+}
+
+.main-navigation input[type="search"]:focus,
+.main-navigation input[type="search"]:active {
+    color:#000000;
+    outline: none;
+    border-bottom: #000000 solid 2px;
+
+}
+
+.main-navigation, button {
+  /* Необходимо ли менять ширину и высоту кнопки? */
+}
+
+.main-navigation button:focus,
+.main-navigation button:hover {
+    background-color:#000000;
+    color: #ffffff; 
+    border-color:#000000;
+}
+
+
+.main-navigation button:active {
+    background-color:#000000;
+    color: #4d4d4d;
+    border-color: #000000;
+    outline: none;
+    /* как сделать нижнюю линию границы поля поиска в одну линию с кнопкой ? */
+}
+
+.main-navigation button {
+    background-color:#f7e296;
+    color: #000000;
+    border-color: #000000;
+}
+
+
+.main-navigation li {
+    list-style: none;
+    display:inline;
+}
+
+
+
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #663d15;
+}
+
+/* fot input 
+background-color: transparent
+border: 2px solid #000000
+border-color: #663d15 */
+
+
