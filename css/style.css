@@ -6,6 +6,11 @@
     } 
     */ 
 
+    /* abeezee-regular - latin */
+@font-face {
+    font-family: 'Gilory-ExtraBold';
+    src: local('Gilory-ExtraBold'), local('Gilory-Light'), local('Gilory');
+  }
 
 
 body {
@@ -35,14 +40,8 @@ a {
     overflow: hidden;
 }
 
-@font-face {
-    font-family: "Gilory"; 
-    src: url("Gilory.woff2") format("woff2")
-}
-
-
 .main-navigation ul {
-    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-family: "Gilroy-Light";
     font-size: 18px; 
 }
 
