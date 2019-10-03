@@ -1,6 +1,6 @@
 /* @font-face {
     font-family: "Roboto";  задаем произвольное имя для шрифта, которое будет использоваться в свойстве font-family при указании стилей для конкретных элементов 
-    src: url("/fonts/Roboto-Regular.ttf") format('truetype');  /* задаем путь относительно корня сайта к шрифту (url) и тип шрифта (format). Тип шрифта выступает подсказкой для браузера (в идеале ускоряет процесс обработки) 
+    src: url("/fonts/Roboto-Regular.ttf") format("truetype");  /* задаем путь относительно корня сайта к шрифту (url) и тип шрифта (format). Тип шрифта выступает подсказкой для браузера (в идеале ускоряет процесс обработки) 
     font-style: normal;   указываем, что стиль шрифта обычный - это значение по умолчанию 
     font-weight: normal;   определяет нормальное начертание символов - это значение по умолчанию 
     } 
@@ -8,15 +8,15 @@
 
     /* abeezee-regular - latin */
 @font-face {
-    font-family: 'Gilory-ExtraBold';
-    src: local('Gilory-ExtraBold'), local('Gilory-Light'), local('Gilory');
+    font-family: "Gilory-ExtraBold";
+    src: local("Gilory-ExtraBold"), local("Gilory-Light"), local("Gilory");
   }
 
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Grilory" Arial, sans-serif;
+    font-family: "Grilory ExtraBold" Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
@@ -29,6 +29,9 @@ a {
     color: #000000;
 }
 
+ul {
+    list-style: none;
+}
 .visually_hidden {
     position: absolute;
     width: 1px;
@@ -41,15 +44,26 @@ a {
 }
 
 .main-navigation ul {
-    font-family: "Gilroy-Light";
-    font-size: 18px; 
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    color: #000000;
 }
 
 .main-navigation {
     background-color: #f7e296;
     background-image: url("./img/header_yellow.png");
-    font-family: "Open Sans", sans-serif; 
+    font-family: OpenSans;
     font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2px;
+    letter-spacing: 0.15px;
     color: #000000;
 }
 
@@ -113,18 +127,135 @@ a {
     display:inline;
 }
 
-
-
-
-.button:hover,
-.button:focus,
-.button:active {
-    background-color: #663d15;
+.company_info h2 {
+    font-size: 47px;
+    line-height: 48px;
 }
 
-/* fot input 
-background-color: transparent
-border: 2px solid #000000
-border-color: #663d15 */
+.company_info p {
+    font-family: "Open Sans Light", sans-serif; 
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+    font-weight: 100;
+}
+
+.company_info li {
+    font-family: "Gilory ExtraBold", sans-serif; 
+    font-size: 10px;
+    line-height: 30px;
+    color: #464646;
+    font-weight: 100;
+}
+
+.company_info a{
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.company_info li {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 2.5;
+    color:#e6e6e6;
+    list-style: circle;
+}
+
+
+
+.contact_info h2 {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.contact_info p {
+    font-family: "Open Sans Light", sans-serif; 
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+    font-weight: 100;
+}
+
+.contact_info a{
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+footer {
+    background-color: #464646;
+
+
+}
+
+footer p {
+    font-family: "Open Sans Light", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 100;
+    color: #ffffff;
+
+}
+
+.service a {
+    font-family: "Gilory ExtraBold", sans-serif; 
+    font-size: 28px;
+    line-height: 24px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.footer_menu a {
+    font-family: "Open Sans Light", sans-serif;
+    font-size: 15px;
+    color: #c8c8c8;
+    font-weight: 100;
+}
+
+.footer_menu a:hover {
+    color: #ffffff;
+}
+
+.footer_menu a:active {
+    color: #7e7e7e;
+}
+
+.catalog_navigation li,
+.catalog_navigation a {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    color: #bcbcbc;
+}
+
+ .monopod {
+    font-family: Gilroy;
+    font-size: 47px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.47px;
+    color: #000000;
+}
+
+.color_select label {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: 0.14px;
+    color: #000000;
+}
+
 
 
