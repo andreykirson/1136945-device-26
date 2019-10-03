@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 <header>
@@ -16,6 +16,9 @@
     <input type="search" class="search_field" name="search" id="search" placeholder="Поиск по сайту">
     <label for="search_btn" class="visually_hidden">Начать поиск</label>
     <button type="button" id="search_btn" name="search_btn">Найти</button>
+    <a href="">Войти</a>
+    <a href="">Сравнить</a>
+    <a href="">Корзина</a>
 
 
       <ul>
@@ -35,7 +38,7 @@
   <h2>Категории товаров</h2>
   <ul>
     <li><a href="http://via.placeholder.com/150x150">Виртуальная реальность</a></li>
-    <li><a href="http://via.placeholder.com/150x150">Монопоы для селфи</a></li>
+    <li><a href="catalog.html">Монопоы для селфи</a></li>
     <li><a href="http://via.placeholder.com/150x150">Экшн-камеры</a></li>
     <li><a href="http://via.placeholder.com/150x150">Фитнес-браслеты</a></li>
     <li><a href="http://via.placeholder.com/150x150">Умные часы</a></li>
@@ -66,18 +69,20 @@
 </section>
 
 <section>
-  <h2>Бренды</h2>
+  <h2>Бренды</h2> 
+  
+  
+  
   <ul>
-    <li><img src="./img/logo-1.png" alt="dji" aria-label="Бренд DJI"></li>
-    <li><img src="./img/logo-2.png" alt="SP Gadgets" aria-label="Бренд SP Gadgets"></li>
-    <li><img src="./img/logo-3.png" alt="GoPro" aria-label="Бренд GoPro"></li>
-    <li><img src="./img/logo-4.png" alt="VIVE" aria-label="Бренд VIVE"></li>
+    <li> <a href=""><img src="./img/logo-1.png" alt="dji" aria-label="Бренд DJI"></a> </li>
+    <li><a href=""><img src="./img/logo-2.png" alt="SP Gadgets" aria-label="Бренд SP Gadgets"></a></li>
+    <li><a href=""><img src="./img/logo-3.png" alt="GoPro" aria-label="Бренд GoPro"></a></li>
+    <li><a href=""><img src="./img/logo-4.png" alt="VIVE" aria-label="Бренд VIVE"></a></li>
   </ul>
 </section>
 
-<section>
+<section class="company_info">
   <h2>
-
     О нас
   </h2>
     <p>
@@ -87,19 +92,18 @@
       Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
     </p>
     <ul>
-     <li>Деловые Линии</li>
-     <li>Автотрейдинг</li>
-     <li>ЖелДорЭкспедиция</li>
+     <li><p>Деловые Линии</p></li>
+     <li><p>Автотрейдинг</p></li>
+     <li><p>ЖелДорЭкспедиция</p></li>
     </ul>
 
   <a href="">Подробнее о нас</a>
 </section>
 
 
-<section>
+<section class="contact_info">
   <h2>
-      
-    КОНТАКТЫ
+    Контакты
   </h2>
   <p>Вы можете забрать товар сами, заехав в наш офис.
     Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -108,42 +112,35 @@
 </section>
 
 </main>
-<footer>
 
-    <div>
+<footer>
+  
+    <div class="footer_menu">
       <a href="">
       <img src="./img/logo_yellow.svg" width="126" height="35" alt="Логотип магазина Device"> 
       </a>
-        <a href="">
-          
-          Войти
-        </a>
-        <a href="">
-          
-          Сравнить</a>
-        <a href="">
-            
-          Корзина
-        </a>
+        <a href="">Войти</a>
+        <a href="">Сравнить</a>
+        <a href=""> Корзина</a>
     </div>
 
    <div>
-     <p>г.Москва ул.Строителей, 15</p>
-      <ul>
+     <p class="street_address">г.Москва ул.Строителей, 15</p>
+      <ul class="service">
         <li><a href="">ДОСТАВКА</a> </li>
         <li><a href="">ГАРАНТИЯ</a> </li>
         <li><a href="">КОНТАКТЫ</a> </li>
       </ul>
-      <p>Тел: +7(495) 495-95-95</p>
-    </div>
+      <p class="phone_number">Тел: +7(495) 495-95-95</p>
 
-    <div>
       <ul>
-        <li><a href=""><img src="./img/fb.svg" alt="Facebook" aria-label="Device в Фейсбуке"></a></li>
-        <li><a href=""><img src="./img/instagram.svg" alt="Instagram" aria-label="Device в Инстаграмме"></a></li>
-        <li><a href=""><img src="./img/twiter.svg" alt="TWITER" aria-label="Device в Твиттере"></a></li>
+          <li><a href="" title="Device в Фейсбуке">Device в Фейсбуке</a></li>
+          <li><a href="" title="Device в Инстаграмме">Device в Инстаграмме</a></li>
+          <li><a href="" title="Device в Твиттере">Device в Твиттере</a></li>    
       </ul>
-      <img src="./img/logo-html_yellow.svg" alt="логотип html Academy">
+      <a href="https://up.htmlacademy.ru/htmlcss/26">
+        <img src="./img/logo-html_yellow.svg" height="35" width="27" alt="логотип html Academy">
+      </a> 
     </div>
 
 </footer>
@@ -158,7 +155,11 @@
     </p>
 
     <p>Подробнее</p> 
-
+    <div>
+    <input type="radio" name="select_item" value="1">
+    <input type="radio" name="select_item" value="2">
+    <input type="radio" name="select_item" value="3">
+    </div>
     <ul>
       <li>Длина палки 8,5 м</li>
       <li>Вес палки 5 кг</li>
@@ -171,9 +172,16 @@
     <h2>Фитнес браслет</h2>
     <img src="./img/slider-2.png" alt="">
       <p>Худеем правильно!</p>
-      <p> Мотивирующие фитнес-браслеты помогут найти в себе силы </p>
-      <p> не пропускать занятия и соблюдать диету. </p>
+      <p>Мотивирующие фитнес-браслеты помогут найти в себе силы </p>
+      <p>не пропускать занятия и соблюдать диету. </p>
       <p>Подробнее</p> 
+
+        <div>
+            <input type="radio" name="select_item" value="1">
+            <input type="radio" name="select_item" value="2">
+            <input type="radio" name="select_item" value="3">
+        </div>
+
       <p>48 часов</p>
       <p>Без подзарядки </p>
   
@@ -190,13 +198,24 @@
      
   
       <p>Подробнее</p> 
-  
+
+      <div>
+          <input type="radio" name="select_item" value="1">
+          <input type="radio" name="select_item" value="2">
+          <input type="radio" name="select_item" value="3">
+      </div>
+
       <ul>
         <li>Дальность полета 500 м</li>
         <li>Радиус поражения 50 м</li>
       </ul>
   
 </section>
+
+<section>
+  <img src="./img/map.png" alt="">
+</section>
+
 
 <section>
 
