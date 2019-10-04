@@ -237,9 +237,8 @@ footer p {
 }
 
  .monopod {
-    font-family: Gilroy;
+    font-family: Gilroy ExtraBold;
     font-size: 47px;
-    font-weight: 800;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: 0.47px;
