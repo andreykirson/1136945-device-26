@@ -91,6 +91,31 @@ ul {
     color: #000000;
 }
 
+.description {
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 0.15px;
+    text-align: left;
+    color: #464646;
+}
+
+.important_feature {
+    font-family: Gilroy;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.36px;
+    text-align: left;
+    color: #000000;
+}
+
+
 /* add rest navigation menu class */
 .main-navigation a:hover,
 .main-navigation a:focus {
@@ -226,18 +251,54 @@ footer p {
 }
 
 .service a {
-    font-family: "Gilory ExtraBold", sans-serif; 
-    font-size: 28px;
-    line-height: 24px;
-    font-weight: 100;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    text-align: left;
     color: #ffffff;
 }
 
+.service a:hover {
+    opacity: 0.6;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.service a:active {
+    opacity: 0.3;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .footer_menu a {
-    font-family: "Open Sans Light", sans-serif;
+    opacity: 0.7;
+    font-family: OpenSans;
     font-size: 15px;
-    color: #c8c8c8;
-    font-weight: 100;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.4;
+    letter-spacing: 0.15px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer_menu a:hover {
@@ -246,6 +307,28 @@ footer p {
 
 .footer_menu a:active {
     color: #7e7e7e;
+}
+
+.street_address {
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.phone_number {
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #ffffff;
 }
 
 .catalog_navigation li,
@@ -261,11 +344,14 @@ footer p {
 }
 
  .monopod {
-    font-family: Gilroy ExtraBold;
+    font-family: Gilroy;
     font-size: 47px;
+    font-weight: 800;
     font-style: normal;
     font-stretch: normal;
+    line-height: 1.02;
     letter-spacing: 0.47px;
+    text-align: left;
     color: #000000;
 }
 
@@ -275,10 +361,76 @@ footer p {
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
-    line-height: 40px;
+    line-height: 2.86;
     letter-spacing: 0.14px;
+    text-align: left;
     color: #000000;
 }
 
+.feature_select {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #000000;
+}
 
+fieldset input[type="radio"] {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.86;
+    letter-spacing: 0.14px;
+    text-align: left;
+    color: #000000;
+}
 
+.to_show{
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    text-align: center;
+    color: #000000;
+}
+
+.item_photo p {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #000000;
+}
+
+.item_photo span {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    text-align: right;
+    color: #464646;
+} 
+
+.category li {
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    color: #000000;
+}

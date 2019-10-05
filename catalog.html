@@ -16,7 +16,7 @@
           <label for="search" class="visually_hidden">Поиск по сайту, введите текст для поиска</label>
           <input type="search" class="search_field" name="search" id="search" placeholder="Поиск по сайту">
           <label for="search_btn" class="visually_hidden">Начать поиск</label>
-          <button type="button" id="search_btn" name="search_btn">Найти</button>
+          <button type="button" id="search_btn" name="search_btn">Найти</button>          
           <a href="">Войти</a>
           <a href="">Сравнить</a>
           <a href="">Корзина</a>
@@ -27,9 +27,9 @@
              <li><a href="">КОНТАКТЫ</a> </li>
             </ul>
 
-            <section class="visually_hidden"> <!-- dropped catalog menu  -->
+            <section class="category visually_hidden"> <!-- dropped catalog menu  -->
               <ul>
-                <li> Виртуальная реальность</li>
+                <li>Виртуальная реальность</li>
                 <li>Монопоы для селфи</li>
                 <li>Экшн-камеры</li>
                 <li>Фитнес-браслеты</li>
@@ -57,10 +57,10 @@
 <fieldset>
   <legend class="visually hidden">Меню фильтра</legend>
 
-  <h3>Стоимость</h3> <!-- make hidden-->
+  <h3 class="feature_select">Стоимость</h3> <!-- make hidden-->
   <label for="price">Стоимость</label>
   <input type="range" min="0" max="0" name="price" id="price">
-  <h3 class="color_select">Цвет</h3>
+  <h3 class="feature_select">Цвет</h3>
   <ul class="color_select">  
     <li>
       <input type="checkbox" value="Черный" name="black" id="black" checked>
@@ -83,14 +83,14 @@
       <label for="pink">Розовый</label></li>
   </ul>
   
-  <p>Bluetooth</p>
-  <input type="radio" name="bluetooth_availability" aria-label="Имеется bluetooth" value="yes" id="bluetooth_availability_yes">
+  <p class="feature_select">Bluetooth</p>
+  <input type="radio" name="bluetooth_availability" aria-label="Имеется bluetooth" value="yes">
   <label for="bluetooth_availability_yes" >Есть</label>
 
-  <input type="radio" name="bluetooth_availability" aria-label="Отсутствует bluetooth" value="no" id="bluetooth_availability_no">
+  <input type="radio" name="bluetooth_availability" aria-label="Отсутствует bluetooth" value="no">
   <label for="bluetooth_availability_no">Нет</label> 
 
- <button>ПОКАЗАТЬ</button>  
+ <button class="to_show">ПОКАЗАТЬ</button>  
 
 </fieldset>
 
@@ -118,7 +118,7 @@
 
   </section>
 
-  <section>
+  <section class="item_photo">
       <article>
         <h2 class="visually_hidden">Фото товара</h2>
       <ul>
@@ -174,32 +174,33 @@
 </main>
 
 <footer>
-    <div>
+  
+    <div class="footer_menu">
       <a href="">
       <img src="./img/logo_yellow.svg" width="126" height="35" alt="Логотип магазина Device"> 
       </a>
-        <a href=""> Войти</a>
+        <a href="">Войти</a>
         <a href="">Сравнить</a>
-        <a href="">Корзина</a>
+        <a href=""> Корзина</a>
     </div>
 
    <div>
-     <p>г.Москва ул.Строителей, 15</p>
-      <ul>
+     <p class="street_address">г.Москва ул.Строителей, 15</p>
+      <ul class="service">
         <li><a href="">ДОСТАВКА</a> </li>
         <li><a href="">ГАРАНТИЯ</a> </li>
         <li><a href="">КОНТАКТЫ</a> </li>
       </ul>
-      <p>Тел: +7(495) 495-95-95</p>
-    </div>
+      <p class="phone_number">Тел: +7(495) 495-95-95</p>
 
-    <div>
       <ul>
-        <li><a href="" title="Device в Фейсбуке">Device в Фейсбуке</a></li>
-        <li><a href="" title="Device в Инстаграмме">Device в Инстаграмме</a></li>
-        <li><a href="" title="Device в Твиттере">Device в Твиттере</a></li>
+          <li><a href="" title="Device в Фейсбуке">Device в Фейсбуке</a></li>
+          <li><a href="" title="Device в Инстаграмме">Device в Инстаграмме</a></li>
+          <li><a href="" title="Device в Твиттере">Device в Твиттере</a></li>    
       </ul>
-      <a href="https://up.htmlacademy.ru/htmlcss/26"><img src="./img/logo-html_yellow.svg" alt="логотип html Academy"></a>
+      <a href="https://up.htmlacademy.ru/htmlcss/26">
+        <img src="./img/logo-html_yellow.svg" height="35" width="27" alt="логотип html Academy">
+      </a> 
     </div>
 
 </footer>
