@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic" rel="stylesheet">
+ 
   </head>
   <body>
 <header>
-  <nav aria-label="Навигация по меню" class="main-navigation">
+  <nav class="main-navigation" aria-label="Навигация по меню">
     <a>
     <img src="./img/logo.svg" width="126" height="35" alt="Логотип магазина Device">
     </a>
@@ -16,16 +17,15 @@
     <input type="search" class="search_field" name="search" id="search" placeholder="Поиск по сайту">
     <label for="search_btn" class="visually_hidden">Начать поиск</label>
     <button type="button" id="search_btn" name="search_btn">Найти</button>
-    <a href="">Войти</a>
-    <a href="">Сравнить</a>
-    <a href="">Корзина</a>
-
-
-      <ul>
-       <li><a href="">КАТАЛОГ ТОВАРОВ</a></li>
-       <li><a href="">ДОСТАВКА</a> </li>
-       <li><a href="">ГАРАНТИЯ</a> </li>
-       <li><a href="">КОНТАКТЫ</a> </li>
+    <a class="sub_menu" href="">Войти</a>
+    <a class="sub_menu" href="">Сравнить</a>
+    <a class="sub_menu" href="">Корзина</a>
+    
+      <ul class="main_menu">
+        <li><a href="">КАТАЛОГ ТОВАРОВ</a></li>
+        <li><a href="">ДОСТАВКА</a> </li>
+        <li><a href="">ГАРАНТИЯ</a> </li>
+        <li><a href="">КОНТАКТЫ</a> </li>
       </ul>
 
   </nav>
@@ -66,10 +66,6 @@
             <li>Материал <span class="important_feature">Карбон</span></li>
           </ul>
     
-          
-          
-          
-
 
           <section>
               <p>В КОРЗИНУ</p>
@@ -174,9 +170,9 @@
       Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
     </p>
     <ul>
-     <li><p>Деловые Линии</p></li>
-     <li><p>Автотрейдинг</p></li>
-     <li><p>ЖелДорЭкспедиция</p></li>
+     <li><p class="logistic_company">Деловые Линии</p></li>
+     <li><p class="logistic_company">Автотрейдинг</p></li>
+     <li><p class="logistic_company">ЖелДорЭкспедиция</p></li>
     </ul>
 
   <a href="">Подробнее о нас</a>
@@ -195,7 +191,7 @@
 
 </main>
 
-<footer>
+<footer class="foot">
   
     <div class="footer_menu">
       <a href="">
@@ -213,7 +209,7 @@
         <li><a href="">ГАРАНТИЯ</a> </li>
         <li><a href="">КОНТАКТЫ</a> </li>
       </ul>
-      <p class="phone_number">Тел: +7(495) 495-95-95</p>
+    <p class="phone_number">Тел: +7(495) 495-95-95</p>
 
       <ul>
           <li><a href="" title="Device в Фейсбуке">Device в Фейсбуке</a></li>
