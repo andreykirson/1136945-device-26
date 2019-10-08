@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic" rel="stylesheet">
- 
   </head>
   <body>
 <header>
@@ -36,7 +34,7 @@
 
 <section>
   <h2>Категории товаров</h2>
-  <ul>
+  <ul class="drop_down_menu">
     <li><a href="http://via.placeholder.com/150x150">Виртуальная реальность</a></li>
     <li><a href="catalog.html">Монопоы для селфи</a></li>
     <li><a href="http://via.placeholder.com/150x150">Экшн-камеры</a></li>
@@ -49,21 +47,21 @@
 
 <ul class="sliders">
     <li>
-        <h2>Селфи палка</h2>
+        <h2 class="selfie_stick">Селфи палка</h2>
           <img src="./img/slider-1.png" alt="">
           <p class="slogan">Делай селфи, <br> как Бен Стиллер!</p> 
  
-          <p class="description">
+          <p class="description selfie_stick">
             Самая длинная палка для селфи доступна в нашем магазине.
             <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
       
           <p class="detailed">Подробнее</p> 
 
-          <ul class="description">
-            <li>Длина палки <span class="important_feature">8,5 м</span></li>
-            <li>Вес палки <span class="important_feature">5 кг</span></li>
-            <li>Материал <span class="important_feature">Карбон</span></li>
+          <ul class="feature selfie_stick">
+            <li>Длина палки <span>8,5 м</span></li>
+            <li>Вес палки <span>5 кг</span></li>
+            <li>Материал <span>Карбон</span></li>
           </ul>
     
 
@@ -73,18 +71,28 @@
           </section>
 
     </li>
+
+    <ul class="category_item">
+        <li><a href="http://via.placeholder.com/150x150">Виртуальная реальность</a></li>
+        <li><a href="catalog.html">Монопоы для селфи</a></li>
+        <li><a href="http://via.placeholder.com/150x150">Экшн-камеры</a></li>
+        <li><a href="http://via.placeholder.com/150x150">Фитнес-браслеты</a></li>
+        <li><a href="http://via.placeholder.com/150x150">Умные часы</a></li>
+        <li><a href="http://via.placeholder.com/150x150">Квадокоптеры</a></li>
+      </ul>
+
     
     <li>
-        <h2>Фитнес браслет</h2>
+        <h2 class="fitness bracelet">Фитнес браслет</h2>
         <img src="./img/slider-2.png" alt="">
           <p class="slogan">Худеем правильно!</p>
-          <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы </p>
+          <p class="description fitness bracelet">Мотивирующие фитнес-браслеты помогут найти в себе силы </p>
           <p>не пропускать занятия и соблюдать диету. </p>
 
           <p>Подробнее</p> 
     
-          <p><span class="important_feature">48 часов</span></p>
-          <p class="description">Без подзарядки</p>
+          <p><span class="feature fitness bracelet">48 часов</span></p>
+          <p class="description fitness bracelet">Без подзарядки</p>
 
           <section>
               <p>В КОРЗИНУ</p>
@@ -94,18 +102,18 @@
     </li>
     
     <li>
-        <h2>Квадокоптер</h2>
+        <h2 class="quadcopter">Квадокоптер</h2>
         <img src="./img/slider-3.png" alt="">
           <p class="slogan">Порхает как бабочка,</p>
           <p>жалит как пчела!</p>
-          <p class="description"> Этот обычный, на первый взгляд, квадрокоптер оснащен </p>
+          <p class="description quadcopter"> Этот обычный, на первый взгляд, квадрокоптер оснащен </p>
           <p> мощным лазером, замаскированным под стандартную камеру. </p>
               
           <p>Подробнее</p> 
 
-          <ul class="description">
-            <li>Дальность полета <span class="important_feature">500 м</span></li>
-            <li>Радиус поражения <span class="important_feature">50 м</span></li>
+          <ul class="feature quadcopter">
+            <li>Дальность полета <span>500 м</span></li>
+            <li>Радиус поражения <span>50 м</span></li>
           </ul>
 
           <section>
