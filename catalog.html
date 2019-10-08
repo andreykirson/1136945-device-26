@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Каталог Девайс</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic" rel="stylesheet">
    </head>
 
   <body>
@@ -54,7 +53,7 @@
 
   <section>
     <h2>Меню для выбора товара</h2>
-    <h3>ФИЛЬТР:</h3>
+    <h3 class="form_filter">ФИЛЬТР:</h3>
   <!-- Форма для фильтра -->
 <form action="https://echo.htmlacademy.ru" method="post">
 <fieldset>
@@ -62,7 +61,7 @@
 
   <h3 class="feature_select">Стоимость</h3> <!-- make hidden-->
   <label for="price">Стоимость</label>
-  <input type="range" min="0" max="0" name="price" id="price">
+  <input type="range" min="0" max="30000" name="price" id="price">
   <h3 class="feature_select">Цвет</h3>
   <ul class="color_select">  
     <li>
@@ -104,10 +103,10 @@
 
   <section>
      
-    <h3>СОРТИРОВКА:</h3>
-    <a href="">По цене</a>
-    <a href="">По типу</a>
-    <a href="">По популярности</a>
+    <h3 class="sort_by">СОРТИРОВКА:</h3>
+    <a class="sort_by_price" href="">По цене</a>
+    <a class="sort_by_type" href="">По типу</a>
+    <a class="sort_by_rate" href="">По популярности</a>
     
     <a href="" aria-label="Отфильтровать по возрастанию">
        <!-- make hidden-->
@@ -167,11 +166,11 @@
   </section>
   <div>
   <ul>  
-   <li><a href="" aria-label="Перейти на предыдущую страницу">НАЗАД</a></li>
-   <li aria-label="Перейти первую страницу">1</li>
-   <li><a href="" aria-label="Перейти вторую страницу">2</a></li>
-   <li><a href="" aria-label="Перейти третюю страницу">3</a></li>
-   <li><a href="" aria-label="Перейти на следущую страницу">ВПЕРЕД</a></li>
+   <li><a class="back" href="" aria-label="Перейти на предыдущую страницу">НАЗАД</a></li>
+   <li class="page_1" aria-label="Перейти первую страницу">1</li>
+   <li><a class="page_2" href="" aria-label="Перейти вторую страницу">2</a></li>
+   <li><a class="page_3" href="" aria-label="Перейти третюю страницу">3</a></li>
+   <li><a class="next" href="" aria-label="Перейти на следущую страницу">ВПЕРЕД</a></li>
   </ul> 
    </div>
 </main>
