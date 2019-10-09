@@ -34,7 +34,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Gilory ExtraBold" Arial, sans-serif;
+    font-family: "Gilroy" Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
@@ -121,7 +121,7 @@ a {
 .main-navigation {
     background-color: #f7e296;
     background-image: url("./img/header_yellow.png");
-    font-family: OpenSans;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -299,7 +299,9 @@ a {
     color:  #000000;
 }
 
-.send_letter *::placeholder{
+.email::placeholder,
+.letter_text ::placeholder,
+.name::placeholder {
     opacity: 0.4;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
@@ -309,7 +311,7 @@ a {
 }
 
 
-.send_letter input[type="submit"] {
+.send {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -432,7 +434,7 @@ p.services_description {
 }
 
 .company_info p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -472,7 +474,7 @@ p.logistic_company {
 }
 
 .contact_info p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -494,7 +496,7 @@ footer.foot {
 }
 
 .foot p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 100;
@@ -542,7 +544,7 @@ footer.foot {
 
 .footer_menu a {
     opacity: 0.7;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -562,7 +564,7 @@ footer.foot {
 }
 
 .street_address {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -573,7 +575,7 @@ footer.foot {
 }
 
 .phone_number {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -585,7 +587,7 @@ footer.foot {
 
 .catalog_navigation li,
 .catalog_navigation a {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -668,7 +670,7 @@ footer.foot {
 }
 
 .color_select label {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -691,13 +693,11 @@ footer.foot {
     color: #000000;
 }
 
-fieldset input[type="radio"] {
-    font-family: "Open Sans", sans-serif;
+.bluetooth_select {
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.86;
+    line-height: 40px;
     letter-spacing: 0.14px;
     text-align: left;
     color: #000000;
@@ -738,7 +738,7 @@ fieldset input[type="radio"] {
 } 
 
 .category li {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 36px;
