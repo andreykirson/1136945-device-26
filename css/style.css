@@ -747,3 +747,29 @@ footer.foot {
     color: #000000;
 }
 
+
+.main-navigation {
+    min-width: 1160px;
+    min-height: 318px;
+}
+
+.main-header-logo {
+    min-height: 36px;
+    min-width: 160px;
+}
+
+.user-navigation {
+    display: flex;
+}
+
+.search-menu {
+    min-width: 320px;
+    min-height: 40px;
+}
+
+.cart-navigation {
+    min-width: 80px;
+    min-height: 20px;
+}
+
+
