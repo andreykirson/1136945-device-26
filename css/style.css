@@ -34,7 +34,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Gilroy" Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
@@ -90,7 +90,7 @@ a {
     list-style: none;
 }
 
-.main_menu {
+.main-menu {
     list-style: none;
 }
 
@@ -105,7 +105,7 @@ a {
     overflow: hidden;
 }
 
-.main_menu a {
+.main-menu a {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -422,7 +422,6 @@ p.services_description {
 
 .main-navigation li {
     list-style: none;
-    display:inline;
 }
 
 .company_info h2 {
@@ -542,7 +541,7 @@ footer.foot {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.footer_menu a {
+.footer-menu a {
     opacity: 0.7;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -555,11 +554,11 @@ footer.foot {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.footer_menu a:hover {
+.footer-menu a:hover {
     color: #ffffff;
 }
 
-.footer_menu a:active {
+.footer-menu a:active {
     color: #7e7e7e;
 }
 
@@ -747,29 +746,51 @@ footer.foot {
     color: #000000;
 }
 
+/* 15 task flex-box */
 
 .main-navigation {
+    display: flex;
+    flex-direction: column;
     min-width: 1160px;
     min-height: 318px;
+    align-items: flex-start;
 }
 
-.main-header-logo {
-    min-height: 36px;
-    min-width: 160px;
-}
-
-.user-navigation {
+.user-navigation
+ {
+    width: 1036px;
+    padding-right: 61px;
+    padding-left: 63px;
+    margin-bottom: 54px;
     display: flex;
+    justify-content: space-between;
 }
 
-.search-menu {
-    min-width: 320px;
-    min-height: 40px;
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1039px;
 }
 
-.cart-navigation {
-    min-width: 80px;
-    min-height: 20px;
+.index-columns {
+    padding-left: 139px;
+    padding-right: 140px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+    padding-left: 140px; 
+}
 
+.footer-user-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

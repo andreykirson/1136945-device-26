@@ -8,33 +8,39 @@
   <body>
 <header>
   <nav class="main-navigation" aria-label="Навигация по меню">
-    <a>
+
+    <a class="main-header-logo">
     <img src="./img/logo.svg" width="126" height="35" alt="Логотип магазина Device">
     </a>
-    
-
-  <div class="search-menu">
-    <label for="search" class="visually_hidden">Поиск по сайту, введите текст для поиска</label>
-    <input type="search" class="search_field" name="search" id="search" placeholder="Поиск по сайту">
-    <label for="search_btn" class="visually_hidden">Начать поиск</label>
-    <button type="button" id="search_btn" name="search_btn">Найти</button>
-  </div>    
-
+  
   <div class="user-navigation">
-    <a class="sub_menu" href="">Войти</a>
-  </div>
 
-  <div class="cart-navigation">
-    <a class="sub_menu" href="">Сравнить</a>
-    <a class="sub_menu" href="">Корзина</a>
+    <div class="serch-container">
+      <label for="search" class="visually_hidden">Поиск по сайту, введите текст для поиска</label>
+      <input type="search" class="search_field" name="search" id="search" placeholder="Поиск по сайту">
+      <label for="search_btn" class="visually_hidden">Начать поиск</label>
+      <button type="button" id="search_btn" name="search_btn">Найти</button>
+    </div>
+
+    <div class="user-container">
+      <a class="sub_menu" href="">Войти</a>
+    </div>
+
+    <div class="cart-container">
+      <a class="sub_menu" href="">Сравнить</a>
+      <a class="sub_menu" href="">Корзина</a>
+    </div>
+
   </div>
-    
-      <ul class="main_menu">
+   
+  <div class="site-navigation">
+      <ul class="main-menu">
         <li><a href="">КАТАЛОГ ТОВАРОВ</a></li>
         <li><a href="">ДОСТАВКА</a> </li>
         <li><a href="">ГАРАНТИЯ</a> </li>
         <li><a href="">КОНТАКТЫ</a> </li>
       </ul>
+  </div>
 
   </nav>
 </header>
@@ -160,6 +166,8 @@
   </ul>
 </section>
 
+<div class="index-columns">
+
 <section class="company_info">
   <h2>
     О нас
@@ -179,7 +187,6 @@
   <a href="">Подробнее о нас</a>
 </section>
 
-
 <section class="contact_info">
   <h2>
     Контакты
@@ -187,46 +194,59 @@
   <p>Вы можете забрать товар сами, заехав в наш офис.
     Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
   <a href=""></a>
-  <a href="">Напишите нам</a>
+
+  <img src="./img/map.png" aria-label="карта проезда" alt="карта проезда">
+  <div>
+    <a href="">Напишите нам</a>
+  </div>
 </section>
+
+</div>
 
 </main>
 
 <footer class="foot">
   
-    <div class="footer_menu">
-      <a href="">
-      <img src="./img/logo_yellow.svg" width="126" height="35" alt="Логотип магазина Device"> 
-      </a>
+    <div class="footer-menu">
+
+      <div class="footer-logo">
+        <a href="">
+        <img class="footer-logo-img" src="./img/logo_yellow.svg" width="126" height="35" alt="Логотип магазина Device"> 
+        </a>
+      </div>
+      
+      <div class="footer-user-menu">
         <a href="">Войти</a>
         <a href="">Сравнить</a>
         <a href=""> Корзина</a>
+      </div>
+
     </div>
 
    <div>
      <p class="street_address">г.Москва ул.Строителей, 15</p>
+
       <ul class="service">
         <li><a href="">ДОСТАВКА</a> </li>
         <li><a href="">ГАРАНТИЯ</a> </li>
         <li><a href="">КОНТАКТЫ</a> </li>
       </ul>
+
     <p class="phone_number">Тел: +7(495) 495-95-95</p>
 
-      <ul>
+      <ul class="social-net">
           <li><a href="" title="Device в Фейсбуке">Device в Фейсбуке</a></li>
           <li><a href="" title="Device в Инстаграмме">Device в Инстаграмме</a></li>
           <li><a href="" title="Device в Твиттере">Device в Твиттере</a></li>    
       </ul>
+
       <a href="https://up.htmlacademy.ru/htmlcss/26">
-        <img src="./img/logo-html_yellow.svg" height="35" width="27" alt="логотип html Academy">
+      <img class="copyright-logo" src="./img/logo-html_yellow.svg" height="35" width="27" alt="логотип html Academy">
       </a> 
     </div>
 
 </footer>
 
-<section>
-  <img src="./img/map.png" alt="">
-</section>
 
 <form class="send_letter" action="https://echo.htmlacademy.ru" method="post">
 
