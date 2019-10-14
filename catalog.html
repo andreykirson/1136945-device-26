@@ -8,28 +8,42 @@
 
   <body>
       <header>
-        <nav aria-label="Навигация по меню" class="main-navigation">
-          <a href="index.html"> 
+        <nav class="main-navigation" aria-label="Навигация по меню" class="main-navigation">
+
+          <a class="main-header-logo" href="index.html"> 
           <img src="./img/logo.svg" width="126" height="35" alt="Логотип магазина Device">
           </a>
-          <label for="search" class="visually_hidden">Поиск по сайту, введите текст для поиска</label>
+
+      <div class="user-navigation">
+
+        <div class="serch-container">
+          <label for="search" class="visually-hidden">Поиск по сайту, введите текст для поиска</label>
           <input type="search" class="search_field" name="search" id="search" placeholder="Поиск по сайту">
-          <label for="search_btn" class="visually_hidden">Начать поиск</label>
+          <label for="search_btn" class="visually-hidden">Начать поиск</label>
           <button type="button" id="search_btn" name="search_btn">Найти</button>
-          
+        </div>
+
+        <div class="user-container">
           <a class="sub_menu" href="">Валентин Петухов</a>
           <a class="sub_menu sign_out" href="">Выйти</a>
+        </div>
+
+        <div class="cart-container">
           <a class="sub_menu" href="">Сравнить</a>
           <a class="sub_menu" href="">Корзина</a>
+        </div>
+      </div>
 
-            <ul class="main_menu">
-             <li><a href="">КАТАЛОГ ТОВАРОВ</a></li>
-             <li><a href="">ДОСТАВКА</a> </li>
-             <li><a href="">ГАРАНТИЯ</a> </li>
-             <li><a href="">КОНТАКТЫ</a> </li>
-            </ul>
+      <div class="site-navigation">
+          <ul class="main-menu">
+            <li><a href="">КАТАЛОГ ТОВАРОВ</a></li>
+            <li><a href="">ДОСТАВКА</a> </li>
+            <li><a href="">ГАРАНТИЯ</a> </li>
+            <li><a href="">КОНТАКТЫ</a> </li>
+          </ul>
+      </div>
 
-            <section class="category visually_hidden"> <!-- dropped catalog menu  -->
+            <section class="category visually-hidden"> <!-- dropped catalog menu  -->
               <ul>
                 <li>Виртуальная реальность</li>
                 <li>Монопоы для селфи</li>
@@ -39,25 +53,34 @@
                 <li>Квадокоптеры</li>
               </ul>
             </section>
-        </nav>
-            
-      </header>
+        
+  </nav>          
+</header>
 
 <main>
-  <h1 class=monopod>Моноподы для селфи</h1>
-  <ul class=catalog_navigation>
-    <li><a href="">Главная</a></li>
-    <li><a href="">Каталог товаров</a></li>
-    <li>Моноподы для селфи</li>
-  </ul>
 
-  <section>
-    <h2>Меню для выбора товара</h2>
+  <div class="menu-of-head">
+    <h1 class=monopod>Моноподы для селфи</h1>
+    <ul class=catalog_navigation>
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог товаров</a></li>
+      <li>Моноподы для селфи</li>
+    </ul>
+ </div>
+
+ 
+<div class="form-item">
+
+<section>
+    <h2 class="visually-hidden">Меню для выбора товара</h2>
+
+<div class="menu-of-form-filter">
+
     <h3 class="form_filter">ФИЛЬТР:</h3>
   <!-- Форма для фильтра -->
-<form action="https://echo.htmlacademy.ru" method="post">
+<form class="form-catalog" action="https://echo.htmlacademy.ru" method="post">
 <fieldset>
-  <legend class="visually hidden">Меню фильтра</legend>
+  <legend class="visually-hidden">Меню фильтра</legend>
 
   <h3 class="feature_select">Стоимость</h3> <!-- make hidden-->
   <label for="price">Стоимость</label>
@@ -86,22 +109,33 @@
   </ul>
   
   <p class="feature_select">Bluetooth</p>
-  <input type="radio" name="bluetooth_availability" aria-label="Имеется bluetooth" value="yes">
-  <label class="bluetooth_select" for="bluetooth_availability_yes" >Есть</label>
 
-  <input type="radio" name="bluetooth_availability" aria-label="Отсутствует bluetooth" value="no">
-  <label class="bluetooth_select" for="bluetooth_availability_no">Нет</label> 
+  <ul>
 
- <button class="to_show">ПОКАЗАТЬ</button>  
+    <li>  <input type="radio" name="bluetooth_availability" aria-label="Имеется bluetooth" value="yes">
+      <label class="bluetooth_select" for="bluetooth_availability_yes" >Есть</label>
+    </li>
+
+    <li> 
+      <input type="radio" name="bluetooth_availability" aria-label="Отсутствует bluetooth" value="no">
+      <label class="bluetooth_select" for="bluetooth_availability_no">Нет</label> 
+    </li>
+
+  </ul>
+
+<div class="to_show container">
+ <button class="to_show">ПОКАЗАТЬ</button>
+</div>
+
+</div> 
 
 </fieldset>
-
 </form>
+</section>
 
+<div class="view-container">
 
-  </section>
-
-  <section>
+  <section class="sort-by-menu">
      
     <h3 class="sort_by">СОРТИРОВКА:</h3>
     <a class="sort_by_price" href="">По цене</a>
@@ -122,40 +156,40 @@
 
   <section class="item_photo">
       <article>
-        <h2 class="visually_hidden">Фото товара</h2>
-      <ul>
-        <li>
+        <h2 class="visually-hidden">Фото товара</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
           <img src="./img/item-1.jpg" alt="Любительская селфи-палка">
           <p>Любительская селфи-палка</p>
           <span>500 руб</span>
-          <div class="visually_hidden">
+          <div class="visually-hidden">
               <a href="">В КОРЗИНУ</a>
               <a href="">Добавить к сравнениию</a>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="./img/item-2.jpg" alt="Профессиональная селфи-палка">
           <p>Профессиональная</p> <p>селфи-палка</p>
           <span>1500 руб</span>
-          <div class="visually_hidden">
+          <div class="visually-hidden">
               <a href="">В КОРЗИНУ</a>
               <a href="">Добавить к сравнениию</a>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="./img/item-3.jpg" alt="Непотопляемая селфи-палка">
           <p>Непотопляемая селфи-палка </p>
           <span>2500 руб</span>
-          <div class="visually_hidden">
+          <div class="visually-hidden">
               <a href="">В КОРЗИНУ</a>
               <a href="">Добавить к сравнениию</a>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="./img/item-4.jpg" alt="Селфи-палка Селфи-палка «Следуй за мной» ">
           <p>Селфи-палка Селфи-палка «Следуй за мной» </p>
           <span>4900 руб</span>
-          <div class="visually_hidden">
+          <div class="visually-hidden">
               <a href="">В КОРЗИНУ</a>
               <a href="">Добавить к сравнениию</a>
           </div>
@@ -164,46 +198,65 @@
     </article>
 
   </section>
-  <div>
-  <ul>  
-   <li><a class="back" href="" aria-label="Перейти на предыдущую страницу">НАЗАД</a></li>
-   <li class="page_1" aria-label="Перейти первую страницу">1</li>
-   <li><a class="page_2" href="" aria-label="Перейти вторую страницу">2</a></li>
-   <li><a class="page_3" href="" aria-label="Перейти третюю страницу">3</a></li>
-   <li><a class="next" href="" aria-label="Перейти на следущую страницу">ВПЕРЕД</a></li>
-  </ul> 
+
+  <div class="pagination">
+    <ul>  
+      <li><a class="back" href="" aria-label="Перейти на предыдущую страницу">НАЗАД</a></li>
+      <li class="page_1" aria-label="Перейти первую страницу">1</li>
+      <li><a class="page_2" href="" aria-label="Перейти вторую страницу">2</a></li>
+      <li><a class="page_3" href="" aria-label="Перейти третюю страницу">3</a></li>
+      <li><a class="next" href="" aria-label="Перейти на следущую страницу">ВПЕРЕД</a></li>
+    </ul> 
    </div>
+
+</div>  
+
+</div> 
+
 </main>
 
 <footer class="foot">
   
-    <div class="footer-menu">
-      <a href="">
-      <img src="./img/logo_yellow.svg" width="126" height="35" alt="Логотип магазина Device"> 
-      </a>
+  <div class="footer-menu">
+
+      <div class="footer-logo">
+        <a href="">
+        <img class="footer-logo-img" src="./img/logo_yellow.svg" width="126" height="35" alt="Логотип магазина Device"> 
+        </a>
+      </div>
+      
+      <div class="footer-user-menu">
         <a href="">Войти</a>
         <a href="">Сравнить</a>
         <a href=""> Корзина</a>
-    </div>
+      </div>
+  </div>
 
-   <div>
-     <p class="street_address">г.Москва ул.Строителей, 15</p>
+   <div class="footer-site-menu">
+     <p class="street_address">г. Москва ул.Строителей, 15</p>
       <ul class="service">
-        <li><a href="">ДОСТАВКА</a> </li>
-        <li><a href="">ГАРАНТИЯ</a> </li>
-        <li><a href="">КОНТАКТЫ</a> </li>
+        <li> <a href="">ДОСТАВКА</a> </li>
+        <li> <a href="">ГАРАНТИЯ</a> </li>
+        <li> <a href="">КОНТАКТЫ</a> </li>
       </ul>
-      <p class="phone_number">Тел: +7(495) 495-95-95</p>
+    <p class="phone_number">Тел: +7(495) 495-95-95</p>
+  </div>
 
-      <ul>
+  <div class="footer-container">
+
+      <ul class="social-net">
           <li><a href="" title="Device в Фейсбуке">Device в Фейсбуке</a></li>
           <li><a href="" title="Device в Инстаграмме">Device в Инстаграмме</a></li>
           <li><a href="" title="Device в Твиттере">Device в Твиттере</a></li>    
       </ul>
+
       <a href="https://up.htmlacademy.ru/htmlcss/26">
-        <img src="./img/logo-html_yellow.svg" height="35" width="27" alt="логотип html Academy">
+      <img class="copyright-logo" src="./img/logo-html_yellow.svg" height="35" width="27" alt="логотип html Academy">
       </a> 
-    </div>
+
+  </div>
+
+
 
 </footer>
  

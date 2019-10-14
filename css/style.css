@@ -94,7 +94,7 @@ a {
     list-style: none;
 }
 
-.visually_hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -130,6 +130,7 @@ a {
     letter-spacing: 0.15px;
     color: #000000;
 }
+
 
 /* Items Sliders style */
 
@@ -754,6 +755,7 @@ footer.foot {
     min-width: 1160px;
     min-height: 318px;
     align-items: flex-start;
+    margin: 0px 140px;
 }
 
 .user-navigation
@@ -785,6 +787,7 @@ footer.foot {
 .footer-menu {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     padding-right: 140px;
     padding-left: 140px; 
 }
@@ -793,4 +796,131 @@ footer.foot {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 72px;
+    min-width: 325px;
+
 }
+
+.footer-logo {
+    padding-top: 65px;
+    padding-bottom: 40px;
+}
+
+.footer-site-menu {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:  auto 140px;
+}
+
+.service,
+.service li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 423px;
+    list-style: none;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 140px 63px 0px;
+}
+
+.social-net {
+    list-style: none;
+    display: flex;
+    width: 1053px;
+    padding-left: 508px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-of-head {
+    display: flex;
+    width: 1053px;
+    padding-left: 201px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.monopod {
+    margin-bottom: 0px;
+}
+
+.catalog_navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0px;
+    padding-right: 29px;
+    margin-top: 41px;
+    width: 381px;
+}
+
+.form-item {
+    display: flex;
+    min-height: 1287px;
+    min-width: 1300px;
+    margin-right: 140px;
+    justify-content: space-between;
+}
+
+.menu-of-form-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 468px;
+    padding-left: 198px;
+    padding-right: 68px;
+}
+
+
+.item_photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 1072px;
+    width: 972px;
+}
+
+.view-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-item { 
+    min-width: 359px;
+    min-height: 455;
+    margin-bottom: 49px;
+}
+
+.catalog-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-item {
+    padding-right: 41px;
+}
+
+
+.pagination ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.sort-by-menu {
+    display: flex;
+    flex-direction: row;
+}
+
