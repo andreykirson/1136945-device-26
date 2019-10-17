@@ -947,14 +947,17 @@ footer.foot {
     margin-left: 60px;
 }
 
+.serch-container {
+
+}
+
 .serch-container::before {
-    content: "";
+    content: " ";
     position: absolute;
     width: 18px;
     height: 18px;
-     top: 20px;
-    left: 20px;
-    background-color: #635a3c;
-    background-image: url("./img/logo.svg");
-    background-repeat: no-repeat;
+    top: 55px;
+    left: 180px;
+    background-color: #c9c6bd;
+    background-image: url('./img/search.svg');
 }
