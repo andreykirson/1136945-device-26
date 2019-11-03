@@ -57,7 +57,7 @@
 
 <main>
 
-<!-- delete  block-for-pp cause it create for pixel perfect -->
+<!-- delete  block-for-pp  it's created for pixel perfect -->
 
 <div class="block-for-pp">    
 
@@ -65,114 +65,150 @@
 
 <section>
   <h2 class="visually-hidden">Категории товаров</h2>
-  <ul class="drop_down_menu">
-    <li><a href="http://via.placeholder.com/150x150">Виртуальная реальность</a></li>
-    <li><a href="catalog.html">Монопоы для селфи</a></li>
-    <li><a href="http://via.placeholder.com/150x150">Экшн-камеры</a></li>
-    <li><a href="http://via.placeholder.com/150x150">Фитнес-браслеты</a></li>
-    <li><a href="http://via.placeholder.com/150x150">Умные часы</a></li>
-    <li><a href="http://via.placeholder.com/150x150">Квадокоптеры</a></li>
+  <ul class="drop_down_menu visually-hidden">
+    <li><a  href="http://via.placeholder.com/150x150">Виртуальная реальность</a></li>
+    <li><a  href="catalog.html">Монопоы для селфи</a></li>
+    <li><a  href="http://via.placeholder.com/150x150">Экшн-камеры</a></li>
+    <li><a  href="http://via.placeholder.com/150x150">Фитнес-браслеты</a></li>
+    <li><a  href="http://via.placeholder.com/150x150">Умные часы</a></li>
+    <li><a  href="http://via.placeholder.com/150x150">Квадокоптеры</a></li>
   </ul>
-
 </section>
 
-<ul class="sliders visually-hidden">
-    <li>
-        <h2 class="selfie_stick">Селфи палка</h2>
-          <img src="./img/slider-1.png" alt="">
-          <p class="slogan selfie_stick">Делай селфи, <br> как Бен Стиллер!</p> 
+<section class="slider">
+  
+
+  <input class="radio-slider-1" type="radio" name="slider-selector" id="slider-1" checked>
  
-          <p class="description selfie_stick">
-            Самая длинная палка для селфи доступна в нашем магазине.
-            <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-          </p>
+  <label for="slider-1"></label>
+  <div class="slider-container selfie_stick">        
+    <h2 class="selfie_stick visually-hidden">Селфи палка</h2>
+    <img class="image-container" src="./img/slider-1.png" alt="">
+    <div class="description-container">
+    <p class="slogan selfie_stick">Делай селфи, <br> как Бен Стиллер!</p> 
+
+    <p class="description selfie_stick">
+      Самая длинная палка для селфи доступна в нашем магазине.
+      <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+    </p>
+
+    <p class="detailed">Подробнее</p> 
+
+    <ul class="feature selfie_stick">
+      <li><span>8,5 м</span> <br> Длина палки </li>
+      <li><span>5 кг</span> <br>Вес палки </li>
+      <li><span>Карбон</span> <br> Материал </li>
+    </ul>
+  </div>
+
+  </div>
+
+  <input class="radio-slider-2" type="radio" name="slider-selector" id="slider-2">
+
+  <label for="slider-2"></label>
+  <div class="slider-container fitness bracelet">
+      <h2 class="visually-hidden">Фитнес браслет</h2>
+      <img class="image-container" src="./img/slider-2.png" alt="">
       
-          <p class="detailed">Подробнее</p> 
+      <div class="description-container">
+      <p class="slogan fitness bracelet">Худеем правильно!</p>
+        <p class="description fitness bracelet">Мотивирующие фитнес-браслеты помогут найти в себе силы
+        <br> не пропускать занятия и соблюдать диету. </p>
 
-          <ul class="feature selfie_stick">
-            <li>Длина палки <span>8,5 м</span></li>
-            <li>Вес палки <span>5 кг</span></li>
-            <li>Материал <span>Карбон</span></li>
-          </ul>
+        <p class="detailed">Подробнее</p> 
 
-    </li>
+        <p class="description fitness bracelet"><span>48 часов</span></p>
+        <p class="description fitness bracelet">Без подзарядки</p>
+      </div>
 
-    <ul class="category_item">
-        <li><a href="http://via.placeholder.com/150x150">Виртуальная реальность</a></li>
-        <li><a href="catalog.html">Монопоы для селфи</a></li>
-        <li><a href="http://via.placeholder.com/150x150">Экшн-камеры</a></li>
-        <li><a href="http://via.placeholder.com/150x150">Фитнес-браслеты</a></li>
-        <li><a href="http://via.placeholder.com/150x150">Умные часы</a></li>
-        <li><a href="http://via.placeholder.com/150x150">Квадокоптеры</a></li>
-      </ul>
-
-    
-    <li>
-        <h2 class="visually-hidden">Фитнес браслет</h2>
-        <img src="./img/slider-2.png" alt="">
-          <p class="slogan fitness bracelet">Худеем правильно!</p>
-          <p class="description fitness bracelet">Мотивирующие фитнес-браслеты помогут найти в себе силы
-          <br> не пропускать занятия и соблюдать диету. </p>
-
-          <p class="detailed">Подробнее</p> 
-    
-          <p><span class="feature fitness bracelet">48 часов</span></p>
-          <p class="description fitness bracelet">Без подзарядки</p>
-
-    </li>
-    
-    <li>
-        <h2 class="visually-hidden">Квадокоптер</h2>
-        <img src="./img/slider-3.png" alt="">
-          <p class="slogan quadcopter">Порхает как бабочка,</p>
-          <p>жалит как пчела!</p>
-          <p class="description quadcopter"> Этот обычный, на первый взгляд, квадрокоптер оснащен </p>
-          <p> мощным лазером, замаскированным под стандартную камеру. </p>
-              
-          <p class="detailed">Подробнее</p> 
-
-          <ul class="feature quadcopter">
-            <li>Дальность полета <span>500 м</span></li>
-            <li>Радиус поражения <span>50 м</span></li>
-          </ul>
-    </li>
-    
-    <div>
-        <input type="radio" name="select_item" value="1">
-        <input type="radio" name="select_item" value="2">
-        <input type="radio" name="select_item" value="3">
     </div>
 
-</ul>
+  <input class="radio-slider-3" type="radio" name="slider-selector" id="slider-3">
 
-<section>
-  <h2>Услуги</h2>
-  <ul>
-    <li>Доставка</li>
-    <li>Гарантия</li>
-    <li>Кредит</li>
-  </ul>
+  <label for="slider-3"></label>
+  <div class="slider-container quadcopter">
+      <h2 class="visually-hidden">Квадокоптер</h2>
+      <img class="image-container" src="./img/slider-3.png" alt="">
+      
+      <div class="description-container">  
+      <p class="slogan quadcopter">Порхает как бабочка, <br>
+        жалит как пчела!</p>
+        <p class="description quadcopter"> Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+        мощным лазером, замаскированным под стандартную камеру. </p>
+            
+        <p class="detailed">Подробнее</p> 
 
-  <section>
-    <h2>Описание услуг</h2>
-    <section>
-      <h3>Доставка</h3>
-      <p>
-      Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-      Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-      </p>
-     
-    </section>
-  </section>
+        <ul class="feature quadcopter">
+          <li> <span>500 м</span> <br> Дальность полета </li>
+          <li> <span>50 м</span> <br> Радиус поражения </li>
+        </ul>
+      </div>
+
+  </div>
 </section>
 
+<section class="category-menu-selector">
+    <h2 class ="header-category-selector visually-hidden">Меню выбора категорий</h2>
+    <ul class="category_item">
+        <li><a class="vr" href="http://via.placeholder.com/150x150">Виртуальная <br> реальность</a></li>
+        <li><a class="monopod" href="catalog.html">Моноподы <br> для селфи</a></li>
+        <li><a class="action-camera" href="http://via.placeholder.com/150x150">Экшн-камеры</a></li>
+        <li><a class="fitness-bracelet" href="http://via.placeholder.com/150x150">Фитнес-браслеты</a></li>
+        <li><a class="smart-whatch" href="http://via.placeholder.com/150x150">Умные часы</a></li>
+        <li><a class="quadrocopter" href="http://via.placeholder.com/150x150">Квадрокоптеры</a></li>
+      </ul>
+</section>
+
+<div class="service-container">
+
+    <ul class="services_menu">
+      <li>
+        <input class="delivery"  type="button" name="delivery" value="Доставка">
+        <label for="delivery">
+          <div class="delivery-container"> 
+            <p class="title">Доставка</p>
+            <p class="services_description delivry">
+              Мы с удовольствием доставим ваш товар прямо к вашему 
+              <br> подъезду совершенно бесплатно! Ведь мы неплохо <br>
+               заработаем, поднимая его на ваш этаж. </p>
+          </div>  
+          </label>
+      </li>
+      <li><input class="warranty" type="button" name="delivery" value="Гарантия"></li>
+      <label for="warranty">
+        <div class="warranty-container">
+        <p class="title">Гарантия</p>
+        <p class="services_description">
+          Если из-за возгорания купленного у нас товара у вас сгорит
+          <br> дом — не переживайте, мы выдадим вам новый.
+          <br> Товар, не дом, конечно же.</p>
+        </div>  
+      </label>
+      
+      <li><input class="credit" type="button" name="delivery" value="Кредит"></li>
+      <label for="credit">
+        <div class="credit-container">
+        <p class="title">Кредит</p>
+        <p class="services_description">
+          Залезть в долговую яму стало проще! Кредитные
+        <br>консультанты подберут для вас наиболее выгодные
+        <br>условия кредита. Выгодные для нашего банка, разумеется.
+        </p>
+        </div>
+      </label>
+    </ul>
+  
+  </div>
+
+
+
 <section>
-  <h2>Бренды</h2>   
-  <ul>
-    <li> <a href=""><img src="./img/logo-1.png" alt="dji" aria-label="Бренд DJI"></a> </li>
-    <li><a href=""><img src="./img/logo-2.png" alt="SP Gadgets" aria-label="Бренд SP Gadgets"></a></li>
-    <li><a href=""><img src="./img/logo-3.png" alt="GoPro" aria-label="Бренд GoPro"></a></li>
-    <li><a href=""><img src="./img/logo-4.png" alt="VIVE" aria-label="Бренд VIVE"></a></li>
+  <h2 class="visually-hidden">Бренды</h2>   
+  <ul class="brands">
+    <li> <a class="dji" href=""><img src="./img/logo-1.png" alt="dji" aria-label="Бренд DJI"></a> </li>
+    <li><a class="sp-gadgets" href=""><img src="./img/logo-3.jpg-2.png" alt="SP Gadgets" aria-label="Бренд SP Gadgets"></a></li>
+    <li><a class="gopro" href=""><img src="./img/logo-3.png" alt="GoPro" aria-label="Бренд GoPro"></a></li>
+    <li><a class="vive" href=""><img src="./img/logo-4.png" alt="VIVE" aria-label="Бренд VIVE"></a></li>
   </ul>
 </section>
 
@@ -360,44 +396,6 @@
   </fieldset>
   </form>
 </div>
-
-
-
-<ul class="services_menu">
-  <li>Доставка</li>
-  <li>Гарантия</li>
-  <li>Кредит</li>
-</ul>
-
-
-<ul class="services_description">
- <li>
-   <p class="title">Доставка</p>
-   <p class="services_description">
-     Мы с удовольствием доставим ваш товар прямо к вашему 
-     <br> подъезду совершенно бесплатно! Ведь мы неплохо заработаем, 
-     <br> поднимая его на ваш этаж. </p>
-</li>
-
-<li>
-  <p class="title">Гарантия</p>
-  <p class="services_description">
-    Если из-за возгорания купленного у нас товара у вас сгорит
-    <br> дом — не переживайте, мы выдадим вам новый.
-    <br> Товар, не дом, конечно же.</p>
-</li>
-
- <li>
-    <p class="title">Кредит</p>
-    <p class="services_description">
-      Залезть в долговую яму стало проще! Кредитные
-    <br>консультанты подберут для вас наиболее выгодные
-    <br>условия кредита. Выгодные для нашего банка, разумеется.
-    </p>
- </li>
-
-</ul>
-
 
 </body>
 
