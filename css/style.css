@@ -1912,6 +1912,30 @@ background-color:#d9d9d9 ;
     padding-left: 116px;
 }
 
+.warranty-container {
+    position: absolute;
+    top: -52px;
+    left: 340px;
+    min-height: 286px;
+    min-width: 1000px;
+    padding-left: 85px;
+    background-color: #e5e5e5;
+    padding-left: 116px;
+}
+
+.credit-container {
+    position: absolute;
+    top: -127px;
+    left: 340px;
+    min-height: 286px;
+    min-width: 1000px;
+    padding-left: 85px;
+    background-color: #e5e5e5;
+    padding-left: 116px;
+}
+
+
+
 
 ul.services_menu::before {
     display: inline;
@@ -1944,6 +1968,30 @@ ul.services_menu::before {
 
 .services_menu.delivery:hover + .delivery-container {
     display: block;
+}
+
+.services_description.warranty::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    width: 136px;
+    height: 164px;
+    background-image: url(../img/warranty.svg);
+    background-repeat: no-repeat;
+    top: -68px;
+    left: 557px;
+}
+
+.services_description.credit::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    width: 158px;
+    height: 186px;
+    background-image: url(../img/credit.svg);
+    background-repeat: no-repeat;
+    top: -68px;
+    left: 529px;
 }
 
 
@@ -2001,11 +2049,10 @@ a.vive:hover::after {
     background-image: url(../img/logo-4-jpg.png);
 }
 
-.warranty-container, .credit-container {
-    display: none;
-}
 
-.slider  div.slider-container {
+
+.slider  div.slider-container,
+.service-container .slider-container {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
@@ -2021,6 +2068,24 @@ a.vive:hover::after {
     position: relative;
 }
 
+
+.service-container  .delivery:active + label + .delivery-container.slider-container {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0s, visibility 0.1s ease-out 0s;
+}
+
+.service-container  .warranty:active + label + .warranty-container.slider-container {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0s, visibility 0.1s ease-out 0s;
+}
+
+.service-container  .credit:active + label + .credit-container.slider-container {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0s, visibility 0.1s ease-out 0s;
+}
 
 .radio-slider-3 {
     position: absolute;
