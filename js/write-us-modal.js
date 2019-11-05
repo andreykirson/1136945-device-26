@@ -40,6 +40,8 @@
   form.addEventListener("submit", function (evt) {
     if (!name_user.value || !email_user.value || !text_letter) {
         evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
         popup.classList.add("modal-error");
       } else {
         if (isStorageSupport) {
