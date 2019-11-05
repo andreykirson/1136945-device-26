@@ -118,6 +118,17 @@ a {
     list-style: none;
 }
 
+.main-menu li:nth-child(3) {
+    position: relative;
+    left: 47px;
+}
+
+.main-menu li:nth-child(2) {
+    position: relative;
+    left: 167px;
+}
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -139,12 +150,6 @@ a {
     letter-spacing: 3.6px;
     color: #000000;
 }
-
-
-
-
-
-
 /* Items Sliders style */
 
 .sliders {
@@ -174,7 +179,8 @@ a {
     margin-bottom: 19px;
 }
 
-.description.selfie_stick {
+.description.selfie_stick,
+.description.quadcopter {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -1228,10 +1234,14 @@ footer.foot {
 /* Send letter form */
 
 .send-letter-container {
-    display: flex;
     width: 960px;
     height: 553px;
     margin: 0 auto;
+    display: none;
+    position: absolute;
+    top: 1061px;
+    left: 240px;
+    background-color: #ffffff;
 }
 
 .send-letter-fildset {
@@ -1409,6 +1419,15 @@ background-color: #f2f2f2;
     position: relative;
     left: 2px;
 }
+
+.modal-map { 
+    display: none;
+    width: 960px;
+    height: 560px;
+    position: absolute;
+    top: 1830px;
+    left: 240px;
+  }
 
 .more-about-us {
     width: 365px;
@@ -1887,12 +1906,12 @@ background-color:#d9d9d9 ;
 .delivery-container {
     position: absolute;
     top: 21px;
-    left: 372px;
+    left: 340px;
     min-height: 286px;
     min-width: 1000px;
     padding-left: 85px;
     background-color: #e5e5e5;
-display: none;
+    padding-left: 116px;
 }
 
 
@@ -1909,7 +1928,7 @@ ul.services_menu::before {
 
 .delivery-container .title {
     position: absolute;
-    left: 85px;
+    left: 118px;
     top: -61px;
 } 
 
@@ -2009,6 +2028,7 @@ a.vive:hover::after {
     position: absolute;
     left: 1200px;
     top: 173px;
+    z-index: 3;
 }
 
 
@@ -2016,6 +2036,7 @@ a.vive:hover::after {
     position: absolute;
     left: 1167px;
     top: 173px;
+    z-index: 3;
 }
 
 
@@ -2023,6 +2044,7 @@ a.vive:hover::after {
     position: absolute;
     left: 1133px;
     top: 173px;
+    z-index: 3;
 }
 
 .slider-container.selfie_stick {
@@ -2069,3 +2091,56 @@ ul.feature {
     left: 145px;
     display: flex;
 }
+
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
+
+  .modal-error {
+    animation: shake 0.6s;
+  }
+
+  .feature.quadcopter li {
+    margin-right: 10px;
+  } 
