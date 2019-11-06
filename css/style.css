@@ -2050,7 +2050,6 @@ a.vive:hover::after {
 }
 
 
-
 .slider  div.slider-container,
 .service-container .slider-container {
     visibility: hidden;
@@ -2067,7 +2066,6 @@ a.vive:hover::after {
 .slider {
     position: relative;
 }
-
 
 .service-container  .delivery:active + label + .delivery-container.slider-container {
     visibility: visible;
